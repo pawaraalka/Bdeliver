@@ -19,8 +19,10 @@
             font-weight: 500;
             margin: 0 auto !important;
             text-align: center;
-            position: relative;
+            position: absolute;
             border: none;
+            right: 10%;
+            bottom: 6%;
         }
 
 
@@ -30,10 +32,7 @@
             margin: 0.1rem 0 1.68rem 0;
         }
 
-        /* .header {
-            background: #102a42;
-            height: 320px;
-        } */
+
         .header {
             background: #102a42;
             height: 260px;
@@ -83,14 +82,12 @@
         .headingTwo {
             font-size: 50px;
             position: absolute;
-            top: 13px;
-            line-height: 28px;
+            top: 15px;
+            line-height: 26px;
             left: 140px;
             text-transform: uppercase;
             font-weight: 700;
-            color: #2a517478;
-            margin-top: 0px;
-            padding-bottom: 14px;
+            color: #2a517478
         }
 
         .headingOne {
@@ -112,16 +109,24 @@
             min-height: 1rem;
         }
 
-        textarea.materialize-textarea {
-            overflow-y: hidden;
-            padding: 0rem 0rem 0;
-            resize: none;
-            min-height: 1rem;
-        }
-
         .slides {
             position: relative;
             margin-top: 33px;
+        }
+
+        .input-field.width100.pd-input {
+            padding: 0px 12px;
+        }
+
+        .footer {
+            position: relative;
+            right: 0;
+            bottom: -30px;
+            left: 0;
+            background-color: #ffffff;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
     </style>
 </head>
@@ -155,39 +160,45 @@
                         Explain
                         your target audience. Who is/can be the most motivated to buy/ recommend your product? Tell us
                         more
-                        about them...</p><br>
-                    <div class="input-field width100">
+                        about them...</p><br><br>
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
                         <textarea id="textarea1" class="materialize-textarea" name="target_audiance"></textarea>
                         <label for="textarea1" class="inputTextarea">Who are they, by profession?</label>
                     </div>
 
 
 
-                    <div class="input-field width100">
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
                         <textarea id="textarea1" name="is_there_any_age" class="materialize-textarea"></textarea>
                         <label for="textarea1" class="inputTextarea">Is there an age/gender skew?</label>
                     </div>
 
 
-                    <div class="input-field width100">
+                    <!-- <div class="input-field width100">
                         <textarea id="textarea1" name="where_are_they" class="materialize-textarea"></textarea>
                         <label for="textarea1" class="inputTextarea">Where are they? (Small towns, big towns,
                             geographies,
                             hospitals, urban, rural, etc.)</label>
-                    </div>
+                    </div> -->
 
 
-                    <div class="input-field width100">
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
                         <textarea id="textarea1" name="there_benifits" class="materialize-textarea"></textarea>
                         <label for="textarea1" class="inputTextarea">What are their beliefs? (with respect to the
                             category)</label>
                     </div>
 
 
-                    <div class="input-field width100">
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
                         <textarea id="textarea1" name="behave" class="materialize-textarea"></textarea>
                         <label for="textarea1" class="inputTextarea">How do they behave? (with respect to the
                             category)</label>
+                    </div>
+                    <div class="input-field width100 col ">
+                        <textarea id="textarea1" name="where_are_they" class="materialize-textarea"></textarea>
+                        <label for="textarea1" class="inputTextarea">Where are they? (Small towns, big towns,
+                            geographies,
+                            hospitals, urban, rural, etc.)</label>
                     </div>
 
                 </div>

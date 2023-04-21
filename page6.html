@@ -19,8 +19,10 @@
             font-weight: 500;
             margin: 0 auto !important;
             text-align: center;
-            position: relative;
+            position: absolute;
             border: none;
+            right: 10%;
+            bottom: 6%;
         }
 
 
@@ -30,10 +32,7 @@
             margin: 0.1rem 0 1.68rem 0;
         }
 
-        /* .header {
-            background: #102a42;
-            height: 320px;
-        } */
+
         .header {
             background: #102a42;
             height: 260px;
@@ -83,14 +82,12 @@
         .headingTwo {
             font-size: 50px;
             position: absolute;
-            top: 13px;
-            line-height: 28px;
+            top: 15px;
+            line-height: 26px;
             left: 140px;
             text-transform: uppercase;
             font-weight: 700;
-            color: #2a517478;
-            margin-top: 0px;
-            padding-bottom: 14px;
+            color: #2a517478
         }
 
         .headingOne {
@@ -112,16 +109,24 @@
             min-height: 1rem;
         }
 
-        textarea.materialize-textarea {
-            overflow-y: hidden;
-            padding: 0rem 0rem 0;
-            resize: none;
-            min-height: 1rem;
-        }
-
         .slides {
             position: relative;
             margin-top: 33px;
+        }
+
+        .input-field.width100.pd-input {
+            padding: 0px 12px;
+        }
+
+        .footer {
+            position: relative;
+            right: 0;
+            bottom: -30px;
+            left: 0;
+            background-color: #ffffff;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
     </style>
 </head>
@@ -151,7 +156,7 @@
                     <p class="paragraph">Please help us understand the hallmarks of the brand, e.g., the brand colors,
                         templates, mnemonics, imagery, design elements, tone, etc. It would help, if you can attach
                         sample
-                        of previous work as jpegs.</p><br>
+                        of previous work as jpegs.</p><br> <br>
 
                     <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
                         <textarea id="understand_hallmark" name="understand_hallmark"
