@@ -128,316 +128,64 @@
             padding-top: 10px;
             padding-bottom: 10px;
         }
+
+        .footer-copyright {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .footer-copyright {
+                position: static;
+                bottom: 10px;
+                width: 100%;
+            }
+
+            .nextbtn {
+                background: #102a42;
+                padding: 6px 33px;
+                font-family: 'Roboto', sans-serif;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 500;
+                margin: 10px auto !important;
+                text-align: center;
+                position: relative;
+                border: none;
+                right: 3%;
+                bottom: -2%;
+            }
+
+            .headingTwo {
+                font-size: 32px;
+                position: absolute;
+                top: 0px;
+                line-height: 26px;
+                left: 140px;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: #2a517478;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div id="container">
 
-        <!-- <div class="row header">
-            <div class="col offset-l2 l8 offset-xxxl2 xxxl8">
-                <div class="home_slider_content text-center">
-                    <div class="home_slider_content_inner">
-                        <h1>brand</h1>
-                        <h1>brief</h1>
-                        <h1 class="tagLine">We'd love to craft the brief with you. Talk to us.</h1>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
-
-
-        <!-- <div class="row">
-            <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
-                <div class="slides">
-                    <h1 class="headingOne">08. <span class="headingTwo">Brand co-ordination team<br><span
-                                class="headingThree">( from client)</span></span></h1>
-
-
-                    <br>
-
-                    <div class="col xxxl6 xxl6 xl6 l6 m12 s12 marTop20">
-                        <p>Marketing Lead</p>
-                        <div class="input-field col m4 s12">
-                            <input id="last_name" name="marketing_lead_name" type="text" class="validate">
-                            <label for="first_name" class="clientDetails2 dateOfLAunch">Name</label>
-                        </div>
-                        <div class="input-field col m4 s12">
-                            <input id="last_name" name="marketing_lead_client" type="text" class="validate">
-                            <label for="first_name" class="clientDetails2 dateOfLAunch">Client</label>
-                        </div>
-                        <div class="input-field col m4 s12">
-                            <input id="last_name" name="marketing_lead_brand" type="text" class="validate">
-                            <label for="first_name" class="clientDetails2 dateOfLAunch">Brand</label>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col xxxl6 xxl6 xl6 l6 m12 s12 marTop20">
-                        <p>Brand Lead</p>
-                     
-                        <div class="input-field col m4 s12">
-                            <input id="last_name" name="brand_lead_name" type="text" class="validate">
-                            <label for="first_name" class="clientDetails2 dateOfLAunch">Name</label>
-                        </div>
-                        <div class="input-field col m4 s12">
-                            <input id="last_name" name="brand_lead_client" type="text" class="validate">
-                            <label for="first_name" class="clientDetails2 dateOfLAunch">Client</label>
-                        </div>
-                        <div class="input-field col m4 s12">
-                            <input id="last_name" name="brand_lead_brand" type="text" class="validate">
-                            <label for="first_name" class="clientDetails2 dateOfLAunch">Brand</label>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col xxxl6 xxl6 xl6 l6 m12 s12 marTop20">
-                        <p>Medical Lead</p>
-                        
-                        <div class="input-field col m4 s12">
-                            <input id="last_name" type="text" name="medical_lead_name" class="validate">
-                            <label for="first_name" class="clientDetails2 dateOfLAunch">Name</label>
-                        </div>
-                        <div class="input-field col m4 s12">
-                            <input id="last_name" type="text" name="medical_lead_client" class="validate">
-                            <label for="first_name" class="clientDetails2 dateOfLAunch">Client</label>
-                        </div>
-                        <div class="input-field col m4 s12">
-                            <input id="last_name" type="text" name="medical_lead_brand" class="validate">
-                            <label for="first_name" class="clientDetails2 dateOfLAunch">Brand</label>
-                        </div>
-                    </div>
-
-                    <div class="col xxxl6 xxl6 xl6 l6 m12 s12 marTop20">
-                        <p>Purchase Lead</p>
-                   
-                        <div class="input-field col m4 s12">
-                            <input id="last_name" type="text" name="purchase_lead_name" class="validate">
-                            <label for="first_name" class="clientDetails2 dateOfLAunch">Name</label>
-                        </div>
-                        <div class="input-field col m4 s12">
-                            <input id="last_name" type="text" name="purchase_lead_email" class="validate">
-                            <label for="first_name" class="clientDetails2 dateOfLAunch">Client</label>
-                        </div>
-                        <div class="input-field col m4 s12">
-                            <input id="last_name" type="text" name="purchase_lead_mobile" class="validate">
-                            <label for="first_name" class="clientDetails2 dateOfLAunch">Brand</label>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div> -->
         <div class="footer">
             <div class="row">
                 <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
-                    <div class="col l3 s12">
-                        <script data-pagespeed-no-defer>
-                            //<![CDATA[
-                            (function () {
-                                for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty :
-                                        function (b, c, a) {
-                                            if (a.get || a.set) throw new TypeError(
-                                                "ES3 does not support getters and setters.");
-                                            b != Array.prototype && b != Object.prototype && (b[c] = a.value)
-                                        }, h = "undefined" != typeof window && window === this ? this :
-                                        "undefined" !=
-                                        typeof global && null != global ? global : this, k = ["String", "prototype",
-                                            "repeat"
-                                        ], l = 0; l < k.length - 1; l++) {
-                                    var m = k[l];
-                                    m in h || (h[m] = {});
-                                    h = h[m]
-                                }
-                                var n = k[k.length - 1],
-                                    p = h[n],
-                                    q = p ? p : function (b) {
-                                        var c;
-                                        if (null == this) throw new TypeError(
-                                            "The 'this' value for String.prototype.repeat must not be null or undefined"
-                                        );
-                                        c = this + "";
-                                        if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value");
-                                        b |= 0;
-                                        for (var a = ""; b;)
-                                            if (b & 1 && (a += c), b >>>= 1) c += c;
-                                        return a
-                                    };
-                                q != p && null != q && g(h, n, {
-                                    configurable: !0,
-                                    writable: !0,
-                                    value: q
-                                });
-                                var t = this;
 
-                                function u(b, c) {
-                                    var a = b.split("."),
-                                        d = t;
-                                    a[0] in d || !d.execScript || d.execScript("var " + a[0]);
-                                    for (var e; a.length && (e = a.shift());) a.length || void 0 === c ? d[e] ? d =
-                                        d[
-                                            e] : d = d[e] = {} : d[e] = c
-                                };
-
-                                function v(b) {
-                                    var c = b.length;
-                                    if (0 < c) {
-                                        for (var a = Array(c), d = 0; d < c; d++) a[d] = b[d];
-                                        return a
-                                    }
-                                    return []
-                                };
-
-                                function w(b) {
-                                    var c = window;
-                                    if (c.addEventListener) c.addEventListener("load", b, !1);
-                                    else if (c.attachEvent) c.attachEvent("onload", b);
-                                    else {
-                                        var a = c.onload;
-                                        c.onload = function () {
-                                            b.call(this);
-                                            a && a.call(this)
-                                        }
-                                    }
-                                };
-                                var x;
-
-                                function y(b, c, a, d, e) {
-                                    this.h = b;
-                                    this.j = c;
-                                    this.l = a;
-                                    this.f = e;
-                                    this.g = {
-                                        height: window.innerHeight || document.documentElement.clientHeight ||
-                                            document.body.clientHeight,
-                                        width: window.innerWidth || document.documentElement.clientWidth ||
-                                            document
-                                            .body.clientWidth
-                                    };
-                                    this.i = d;
-                                    this.b = {};
-                                    this.a = [];
-                                    this.c = {}
-                                }
-
-                                function z(b, c) {
-                                    var a, d, e = c.getAttribute("data-pagespeed-url-hash");
-                                    if (a = e && !(e in b.c))
-                                        if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1;
-                                        else {
-                                            d = c.getBoundingClientRect();
-                                            var f = document.body;
-                                            a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document
-                                                .documentElement || f.parentNode || f).scrollTop);
-                                            d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document
-                                                .documentElement || f.parentNode || f).scrollLeft);
-                                            f = a.toString() + "," + d;
-                                            b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height &&
-                                                d <= b
-                                                .g.width)
-                                        } a && (b.a.push(e), b.c[e] = !0)
-                                }
-                                y.prototype.checkImageForCriticality = function (b) {
-                                    b.getBoundingClientRect && z(this, b)
-                                };
-                                u("pagespeed.CriticalImages.checkImageForCriticality", function (b) {
-                                    x.checkImageForCriticality(b)
-                                });
-                                u("pagespeed.CriticalImages.checkCriticalImages", function () {
-                                    A(x)
-                                });
-
-                                function A(b) {
-                                    b.b = {};
-                                    for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d) a = a.concat(v(
-                                        document.getElementsByTagName(c[d])));
-                                    if (a.length && a[0].getBoundingClientRect) {
-                                        for (d = 0; c = a[d]; ++d) z(b, c);
-                                        a = "oh=" + b.l;
-                                        b.f && (a += "&n=" + b.f);
-                                        if (c = !!b.a.length)
-                                            for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++
-                                                d) {
-                                                var e = "," + encodeURIComponent(b.a[d]);
-                                                131072 >= a.length + e.length && (a += e)
-                                            }
-                                        b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a
-                                            .length + e.length && (a += e), c = !0);
-                                        C = a;
-                                        if (c) {
-                                            d = b.h;
-                                            b = b.j;
-                                            var f;
-                                            if (window.XMLHttpRequest) f = new XMLHttpRequest;
-                                            else if (window.ActiveXObject) try {
-                                                f = new ActiveXObject("Msxml2.XMLHTTP")
-                                            } catch (r) {
-                                                try {
-                                                    f = new ActiveXObject("Microsoft.XMLHTTP")
-                                                } catch (D) {}
-                                            }
-                                            f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" +
-                                                encodeURIComponent(b)), f.setRequestHeader("Content-Type",
-                                                "application/x-www-form-urlencoded"), f.send(a))
-                                        }
-                                    }
-                                }
-
-                                function B() {
-                                    var b = {},
-                                        c;
-                                    c = document.getElementsByTagName("IMG");
-                                    if (!c.length) return {};
-                                    var a = c[0];
-                                    if (!("naturalWidth" in a && "naturalHeight" in a)) return {};
-                                    for (var d = 0; a = c[d]; ++d) {
-                                        var e = a.getAttribute("data-pagespeed-url-hash");
-                                        e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 <
-                                                a
-                                                .naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m
-                                            ) &&
-                                            (b[e] = {
-                                                rw: a.width,
-                                                rh: a.height,
-                                                ow: a.naturalWidth,
-                                                oh: a.naturalHeight
-                                            })
-                                    }
-                                    return b
-                                }
-                                var C = "";
-                                u("pagespeed.CriticalImages.getBeaconData", function () {
-                                    return C
-                                });
-                                u("pagespeed.CriticalImages.Run", function (b, c, a, d, e, f) {
-                                    var r = new y(b, c, a, e, f);
-                                    x = r;
-                                    d && w(function () {
-                                        window.setTimeout(function () {
-                                            A(r)
-                                        }, 0)
-                                    })
-                                });
-                            })();
-                            pagespeed.CriticalImages.Run('/mod_pagespeed_beacon',
-                                'https://bdeliver.net/bdelivernew/brandbrief-view', 'nXzXivl0t7', true, false,
-                                'zF3coE74yKE');
-                            //]]>
-                        </script><img src="https://bdeliver.net/bdelivernew/images/Brandcare-logo.png"
-                            class="responsive-img logo" alt="logo" data-pagespeed-url-hash="1229339762"
-                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
-                    </div>
                     <!-- <div class="col l2 s12">
                     <h5 class="left-align footerHeading">Address</h5>
                     <ul>
                       <li>405, Sunrise Business Park, Plot No. B-68, Road No. 16, MIDC, Wagle Estate, Thane W - 400604. </li>
                     </ul>
                   </div> -->
-                    <div class="col l2 s12">
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
                         <h5 class="left-align footerHeading">Project Lead</h5>
                         <ul>
                             <li>
@@ -449,7 +197,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l2 s12">
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
                         <h5 class="left-align footerHeading">Client Servicing</h5>
                         <ul>
                             <li>
@@ -461,7 +209,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l2 s12">
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
                         <h5 class="left-align footerHeading">Creative</h5>
                         <ul>
                             <li>
@@ -473,7 +221,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l2 s12">
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
                         <h5 class="left-align footerHeading">Medical Lead</h5>
                         <ul>
                             <li>
@@ -487,11 +235,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright">
-                <div class="container copyright">© 2019 Brandcare Medical Advertising & Consultancy Pvt. Ltd. All Rights
-                    Reserved.
-                </div>
-            </div>
+
         </div>
         <!-- </form>	 -->
     </div>
@@ -502,6 +246,11 @@
     <center>
         <button class="modal-trigger nextbtn" type="button">send</button>
     </center>
+    <div class="footer-copyright">
+        <div class="container copyright">© 2019 Brandcare Medical Advertising & Consultancy Pvt. Ltd. All Rights
+            Reserved.
+        </div>
+    </div>
 
     <!-- <center>
         <button class="modal-trigger submitBtn" onclick="submitBtn()" type="button">Send</button>
