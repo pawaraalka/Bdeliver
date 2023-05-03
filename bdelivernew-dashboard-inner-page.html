@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="https://bdeliver.net/bdelivernew/css/materialize.css">
+    <link type="text/css" rel="stylesheet" href="https://bdeliver.net/bdelivernew/css/docTransfer.css" />
+    <link rel="stylesheet" type="text/css" href="https://bdeliver.net/bdelivernew/css/login.css" />
+    <style>
+        button.aboutBdeliverBtn:hover,
+        button.aboutBdeliverBtn:active {
+            color: #fff !important;
+            border: none !important;
+            background: none !important;
+        }
+
+        button.aboutBdeliverBtn {
+            position: absolute;
+            top: 410px;
+            right: 75px !important;
+            text-transform: uppercase;
+            font-weight: 300 !important;
+            background: none !important;
+            font-size: 30px;
+            border: none;
+        }
+
+        button {
+            background: none;
+            border: none;
+        }
+
+        .brandcareLogo {
+            width: 150px;
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+        }
+
+        body,
+        html {
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="row bg">
+        <div class="col xxxl12 xxl12 xl12 l12 m12 s12">
+            <div class="col xxxl6 xxl6 xl6 l12 m12 s12 leftPanel">
+                <div class="home_text_large">send</div>
+                <div class="home_text_small">Brand Brief Global</div><br>
+
+            </div>
+
+
+            <a href="https://bdeliver.net/bdelivernew/display-users">
+                <div class="col xxxl6 xxl6 xl6 l12 m12 s12 rightPanel">
+                    <div class="home_text_large">view</div>
+                    <div class="home_text_small">records</div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+
+    <div class="row bg">
+        <div class="col xxxl12 xxl12 xl12 l12 m12 s12">
+            <!-- <div class="col xxxl6 xxl6 xl6 l12 m12 s12 leftPanel"> -->
+            <div class="home_text_large">send</div>
+            <div class="home_text_small">documents</div><br>
+            <div class="input-field briefingDocumentList">
+                <select id="selectbox" name="selectbox">
+                    <option value="" disabled selected>Briefing Documents</option>
+                    <!--  <option value="1">AV Script Format</option> -->
+                    <option value="2">Brand Brief Global</option>
+                    <!-- <option value="3">Brand Brief Initiative</option> -->
+                    <!-- <option value="4">Client Format</option> -->
+                    <option value="5">Concept Testing</option>
+                    <option value="6">Event Brief</option>
+                    <option value="7">Identity Brief</option>
+                    <!-- <option value="8">Ipad Detailing Specs</option> -->
+                    <option value="9">Market Research Brief</option>
+                    <option value="10">Pitch Document</option>
+                    <!-- <option value="11">Project Closure Report</option> -->
+                    <option value="12">Proposal</option>
+                    <!--  <option value="13">Sentimetrics</option> -->
+                    <!-- <option value="14">Website Brief</option> -->
+                    <option value="15">Video Brief</option>
+                    <option value="16">Docintosh Proposal</option>
+                    <option value="17">Docintosh Website Proposal</option>
+                </select>
+                <label></label>
+            </div>
+            <!-- </div> -->
+        </div>
+
+    </div>
+
+    <!-- chnage password modal starts here -->
+    <div id="modal1" class="modal">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="panel panel-default">
+                        <!-- <div class="panel-heading">Change password</div> -->
+
+                        <div class="panel-body">
+                            <form class="form-horizontal" method="POST"
+                                action="https://bdeliver.net/bdelivernew/changePassword">
+                                <input type="hidden" name="_token" value="KvhSSJt8zsgGUXkZRGnfByORK5fqByRrpBRzoDNT">
+
+                                <div class="form-group">
+                                    <label for="new-password" class="col-md-4 control-label">Current Password</label>
+
+                                    <div class="col-md-6">
+                                        <input id="current-password" type="password" class="form-control"
+                                            name="current-password" required>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="new-password" class="col-md-4 control-label">New Password</label>
+
+                                    <div class="col-md-6">
+                                        <input id="new-password" type="password" class="form-control"
+                                            name="new-password" required>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="new-password-confirm" class="col-md-4 control-label">Confirm New
+                                        Password</label>
+
+                                    <div class="col-md-6">
+                                        <input id="new-password-confirm" type="password" class="form-control"
+                                            name="new-password_confirmation" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-6 col-md-offset-4">
+                                        <button type="submit" class="btn btn-primary">
+                                            Change Password
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- chnage password modal ends here-->
+
+    <a href="https://bdeliver.net/bdelivernew/home" style="margin-right: 80px;" class="logout">Home</a>
+    <a href="#modal1" style="margin-right: 150px;" class="modal-trigger logout">Change Password</a>
+    <a class="logout" href="https://bdeliver.net/bdelivernew/logout"
+        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+        Logout
+    </a>
+
+    <form id="logout-form" action="https://bdeliver.net/bdelivernew/logout" method="POST" style="display: none;">
+        <input type="hidden" name="_token" value="KvhSSJt8zsgGUXkZRGnfByORK5fqByRrpBRzoDNT">
+    </form>
+
+    <script data-pagespeed-no-defer>
+        //<![CDATA[
+        (function () {
+            for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function (b, c, a) {
+                        if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters.");
+                        b != Array.prototype && b != Object.prototype && (b[c] = a.value)
+                    }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global &&
+                    null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length -
+                1; l++) {
+                var m = k[l];
+                m in h || (h[m] = {});
+                h = h[m]
+            }
+            var n = k[k.length - 1],
+                p = h[n],
+                q = p ? p : function (b) {
+                    var c;
+                    if (null == this) throw new TypeError(
+                        "The 'this' value for String.prototype.repeat must not be null or undefined");
+                    c = this + "";
+                    if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value");
+                    b |= 0;
+                    for (var a = ""; b;)
+                        if (b & 1 && (a += c), b >>>= 1) c += c;
+                    return a
+                };
+            q != p && null != q && g(h, n, {
+                configurable: !0,
+                writable: !0,
+                value: q
+            });
+            var t = this;
+
+            function u(b, c) {
+                var a = b.split("."),
+                    d = t;
+                a[0] in d || !d.execScript || d.execScript("var " + a[0]);
+                for (var e; a.length && (e = a.shift());) a.length || void 0 === c ? d[e] ? d = d[e] : d = d[
+                    e] = {} : d[e] = c
+            };
+
+            function v(b) {
+                var c = b.length;
+                if (0 < c) {
+                    for (var a = Array(c), d = 0; d < c; d++) a[d] = b[d];
+                    return a
+                }
+                return []
+            };
+
+            function w(b) {
+                var c = window;
+                if (c.addEventListener) c.addEventListener("load", b, !1);
+                else if (c.attachEvent) c.attachEvent("onload", b);
+                else {
+                    var a = c.onload;
+                    c.onload = function () {
+                        b.call(this);
+                        a && a.call(this)
+                    }
+                }
+            };
+            var x;
+
+            function y(b, c, a, d, e) {
+                this.h = b;
+                this.j = c;
+                this.l = a;
+                this.f = e;
+                this.g = {
+                    height: window.innerHeight || document.documentElement.clientHeight || document.body
+                        .clientHeight,
+                    width: window.innerWidth || document.documentElement.clientWidth || document.body
+                        .clientWidth
+                };
+                this.i = d;
+                this.b = {};
+                this.a = [];
+                this.c = {}
+            }
+
+            function z(b, c) {
+                var a, d, e = c.getAttribute("data-pagespeed-url-hash");
+                if (a = e && !(e in b.c))
+                    if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1;
+                    else {
+                        d = c.getBoundingClientRect();
+                        var f = document.body;
+                        a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f
+                            .parentNode || f).scrollTop);
+                        d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f
+                            .parentNode || f).scrollLeft);
+                        f = a.toString() + "," + d;
+                        b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width)
+                    } a && (b.a.push(e), b.c[e] = !0)
+            }
+            y.prototype.checkImageForCriticality = function (b) {
+                b.getBoundingClientRect && z(this, b)
+            };
+            u("pagespeed.CriticalImages.checkImageForCriticality", function (b) {
+                x.checkImageForCriticality(b)
+            });
+            u("pagespeed.CriticalImages.checkCriticalImages", function () {
+                A(x)
+            });
+
+            function A(b) {
+                b.b = {};
+                for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d) a = a.concat(v(document
+                    .getElementsByTagName(c[d])));
+                if (a.length && a[0].getBoundingClientRect) {
+                    for (d = 0; c = a[d]; ++d) z(b, c);
+                    a = "oh=" + b.l;
+                    b.f && (a += "&n=" + b.f);
+                    if (c = !!b.a.length)
+                        for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) {
+                            var e = "," + encodeURIComponent(b.a[d]);
+                            131072 >= a.length + e.length && (a += e)
+                        }
+                    b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (
+                        a += e), c = !0);
+                    C = a;
+                    if (c) {
+                        d = b.h;
+                        b = b.j;
+                        var f;
+                        if (window.XMLHttpRequest) f = new XMLHttpRequest;
+                        else if (window.ActiveXObject) try {
+                            f = new ActiveXObject("Msxml2.XMLHTTP")
+                        } catch (r) {
+                            try {
+                                f = new ActiveXObject("Microsoft.XMLHTTP")
+                            } catch (D) {}
+                        }
+                        f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(
+                                b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f
+                            .send(a))
+                    }
+                }
+            }
+
+            function B() {
+                var b = {},
+                    c;
+                c = document.getElementsByTagName("IMG");
+                if (!c.length) return {};
+                var a = c[0];
+                if (!("naturalWidth" in a && "naturalHeight" in a)) return {};
+                for (var d = 0; a = c[d]; ++d) {
+                    var e = a.getAttribute("data-pagespeed-url-hash");
+                    e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight ||
+                        e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = {
+                        rw: a.width,
+                        rh: a.height,
+                        ow: a.naturalWidth,
+                        oh: a.naturalHeight
+                    })
+                }
+                return b
+            }
+            var C = "";
+            u("pagespeed.CriticalImages.getBeaconData", function () {
+                return C
+            });
+            u("pagespeed.CriticalImages.Run", function (b, c, a, d, e, f) {
+                var r = new y(b, c, a, e, f);
+                x = r;
+                d && w(function () {
+                    window.setTimeout(function () {
+                        A(r)
+                    }, 0)
+                })
+            });
+        })();
+        pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', 'https://bdeliver.net/bdelivernew/dashboard',
+            'nXzXivl0t7', true, false, 'yleJBPJefaE');
+        //]]>
+    </script><img src="https://bdeliver.net/bdelivernew/images/Brandcare-logo.png" class="brandcareLogo"
+        data-pagespeed-url-hash="1229339762" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
+    <p class="text-center copyright"><i class="fa fa-copyright" aria-hidden="true"></i>&copy 2019 Brandcare Medical
+        Advertising & Consultancy Pvt. Ltd. All Rights Reserved. </p>
+
+
+
+
+
+    <a href="https://bdeliver.net/bdelivernew/home" style="margin-right: 80px;" class="logout">Home</a>
+    <a class="logout" href="https://bdeliver.net/bdelivernew/logout" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+        Logout
+    </a>
+
+    <form id="logout-form" action="https://bdeliver.net/bdelivernew/logout" method="POST" style="display: none;">
+        <input type="hidden" name="_token" value="KvhSSJt8zsgGUXkZRGnfByORK5fqByRrpBRzoDNT">
+    </form>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+    </script>
+
+    <script>
+        $('#selectbox').change(function () {
+            var value = $(this).val();
+            if (value == 2) {
+                window.location.href = "https://bdeliver.net/bdelivernew/brandbrief-view-new";
+            } else if (value == 12) {
+                window.location.href = "https://bdeliver.net/bdelivernew/brandproposal-view";
+            } else if (value == 5) {
+                window.location.href = "https://bdeliver.net/bdelivernew/testing-view";
+            } else if (value == 6) {
+                window.location.href = "https://bdeliver.net/bdelivernew/eventbrief-view";
+            } else if (value == 7) {
+                window.location.href = "https://bdeliver.net/bdelivernew/identitybrief-view";
+            } else if (value == 9) {
+                window.location.href = "https://bdeliver.net/bdelivernew/research-view";
+            } else if (value == 10) {
+                window.location.href = "https://bdeliver.net/bdelivernew/pitch-view";
+            } else if (value == 15) {
+                window.location.href = "https://bdeliver.net/bdelivernew/videobrief-view";
+            } else if (value == 16) {
+                window.location.href = "https://bdeliver.net/bdelivernew/DocintoshProposal-view";
+            } else if (value == 17) {
+                window.location.href = "https://bdeliver.net/bdelivernew/Docintosh-Website-Proposal-view";
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+    </script>
+</body>
+
+</html>

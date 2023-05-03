@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://bdeliver.net/bdelivernew/css/materialize.css" />
+    <link type="text/css" rel="stylesheet" href="https://bdeliver.net/bdelivernew/css/docTransfer.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bdeliver dashboard</title>
+
+    <style>
+        .bg-overlay-base {
+            content: "";
+            position: absolute;
+            background-image: linear-gradient(335deg, #e80000 15%, rgba(25, 25, 25, 0) 100%);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        @font-face {
+            font-family: Beyond;
+            src: url(./font/beyond-the-mountains/beyond_the_mountains.otf);
+            src: url(./font/beyond-the-mountains/beyond_the_mountains.ttf);
+        }
+
+
+        @media screen and (max-width: 576px) {}
+    </style>
+</head>
+
+<body>
+    <div class="row bg">
+        <div id="container">
+
+
+
+            <h2>Briefing Documents</h2>
+            <h2>Concept Testing</h2>
+            Event Brief
+            Identity Brief
+            Market Research Brief
+            Pitch Document
+            Proposal
+            Video Brief
+            Docintosh Proposal
+            Docintosh Website Proposal
+
+           
+
+
+        </div>
+    </div>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        function submitBtn() {
+            var name = $("#name").val();
+            var client = $("#client").val();
+            var brand = $("#brand").val();
+            var email = $("#email").val();
+            var project_lead = $("#project_lead").val();
+            var client_servicing = $("#client_servicing").val();
+            var creative_director = $("#creative_director").val();
+            var medical_lead = $("#medical_lead").val();
+            var doc_id = $("#doc_id").val();
+            if (name == "" || client == "" || brand == "" || email == "") {
+                swal("Please Check If Name , Client , Brand or Email Field is Empty.");
+            } else if (project_lead == "" || client_servicing == "" || creative_director == "" || medical_lead == "") {
+                swal("Please Check If Project Lead , Client Servicing , Director or Medical Lead is Empty.");
+            } else if (doc_id != "") {
+                swal("Thank you, for submitting Brand Brief. We will get back to you shortly.").then((value) => {
+                    $("#form1").submit();
+                });
+            } else {
+                swal("Your link has been shared successfully to " + name + ".").then((value) => {
+                    $("#form1").submit();
+                });
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+
+</html>
