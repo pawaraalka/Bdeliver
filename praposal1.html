@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://bdeliver.net/bdelivernew/css/materialize.css" />
+    <link type="text/css" rel="stylesheet" href="https://bdeliver.net/bdelivernew/css/docTransfer.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/sweetalert2/6.4.1/sweetalert2.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
+    <!-- <link href="https://bdeliver.net/bdelivernew/css/jquery.uploadPreviewer.css" rel="stylesheet" /> -->
+    <link href="https://bdeliver.net/bdelivernew/css/materialnote.css" rel="stylesheet" type="text/css">
+    <script src="https://bdeliver.net/bdelivernew/js/materialnote.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#materialnote').materialnote({
+                height: 200
+            });
+            $('#summernote').summernote({
+                toolbar: [
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                    ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['height', ['height']]
+                ]
+            });
+        });
+    </script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proposal</title>
+    <style type="text/css">
+        #errmsg {
+            color: red
+        }
+
+        .headingOne input.cust-heading {
+            font-size: 3rem !important
+        }
+
+        .mt-0 {
+            margin-top: 0 !important
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0
+        }
+
+        /* custom css start */
+        .header {
+            background: #102a42;
+            height: 260px;
+        }
+
+        .home_slider_content_inner {
+            margin-top: -72px;
+        }
+
+        .home_slider_content h1:first-child {
+            font-size: 90px;
+            font-weight: 900;
+            color: #FFFFFF;
+            text-transform: uppercase;
+        }
+
+        .input-field {
+            position: relative;
+            margin-top: 0rem;
+        }
+
+        .nextbtn {
+            background: #102a42;
+            padding: 6px 33px;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 auto !important;
+            text-align: center;
+            border: none;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="row header">
+            <div class="col offset-l2 l8 offset-xxxl2 xxxl8">
+                <div class="home_slider_content text-center">
+                    <div class="home_slider_content_inner">
+                        <h1>proposal</h1>
+                        <!--  <h1 class="mt-0">2021</h1> -->
+                        <!-- <h1 class="tagLine tagLine2">We are excited to work on your brand!</h1> -->
+                        <p style="color: white; text-align: center;">Brand | Website | Video | Event </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clientData ">
+            <form id="form1" method="post" action="https://bdeliver.net/bdelivernew/brandproposal"
+                class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
+                <input type="hidden" name="_token" value="YvS5KbW3hc4LmQ0HVzvgp9RaMMNnnOuFxLUk2TdA">
+                <!-- <form class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12"> -->
+                <div class="row">
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
+                        <input id="doc_id" name="id" type="hidden" style="display:none;">
+                        <input id="name" type="text" name="name" class="validate" required>
+                        <label for="name" class="clientDetails2">Name</label>
+                    </div>
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
+                        <input id="client" type="text" name="client" class="validate" required>
+                        <label for="client" class="clientDetails2">Client</label>
+                    </div>
+                    <!-- <div class="input-field col m4 s12">
+                        <input id="email" name="email" type="text" class="validate" required>
+                        <label for="email" class="clientDetails2">Email ID</label>
+                    </div> -->
+
+                </div>
+                <div class="row">
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
+                        <input id="email" name="email" type="text" class="validate" required>
+                        <label for="email" class="clientDetails2">Email ID</label>
+                    </div>
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
+                        <input name="project_name" id="last_name" type="text" class="validate" required>
+                        <label for="project_name" class="clientDetails2">Project</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
+                        <input name="proposal_by" id="proposal_by" type="text" class="validate" required>
+                        <label for="proposal_by" class="clientDetails2">Proposal by</label>
+                    </div>
+                    <div class="input-field width100 col xxxl6 xxl6 xl6 l6 m6 xs6">
+                        <input name="proposal_validity" id="last_name" type="number" min="0" class="validate" required>
+                        <label for="proposal_validity" class="clientDetails2">Engagement Duration In Days</label>
+                    </div>
+                </div>
+                <center>
+                    <a href="praposal2.html"><button class="modal-trigger nextbtn" type="button">Next</button></a>
+                </center>
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/sweetalert2/6.4.1/sweetalert2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#four_a_text").keypress(function (e) {
+                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                    $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                    return false;
+                }
+            });
+        });
+    </script>
+    <script>
+        function calc() {
+            var camp_theam_fee = document.getElementById("camp_theam_fee").value;
+            var camp_theam_fee = +camp_theam_fee;
+            var camp_prog_fee = document.getElementById("camp_prog_fee").value;
+            var camp_prog_fee = +camp_prog_fee;
+            var collateral_fee = document.getElementById("collateral_fee").value;
+            var collateral_fee = +collateral_fee;
+            var Initiatives_fee = document.getElementById("Initiatives_fee").value;
+            var Initiatives_fee = +Initiatives_fee;
+            var engagement_fee = document.getElementById("engagement_fee").value;
+            var engagement_fee = +engagement_fee;
+            var dcampaigns_fee = document.getElementById("dcampaigns_fee").value;
+            var dcampaigns_fee = +dcampaigns_fee;
+            var films_fee = document.getElementById("films_fee").value;
+            var films_fee = +films_fee;
+            var medinitiatives_fee = document.getElementById("medinitiatives_fee").value;
+            var medinitiatives_fee = +medinitiatives_fee;
+            var medianimations_fee = document.getElementById("medianimations_fee").value;
+            var medianimations_fee = +medianimations_fee;
+            var cmecontent_fee = document.getElementById("cmecontent_fee").value;
+            var cmecontent_fee = +cmecontent_fee;
+            var market_research_fee = document.getElementById("market_research_fee").value;
+            var market_research_fee = +market_research_fee;
+            var inputs_fee = document.getElementById("inputs_fee").value;
+            var inputs_fee = +inputs_fee;
+            var total = camp_theam_fee + camp_prog_fee + collateral_fee + Initiatives_fee + engagement_fee +
+                dcampaigns_fee + films_fee + medinitiatives_fee + medianimations_fee + cmecontent_fee +
+                market_research_fee + inputs_fee;
+            document.getElementById("total_fee").value = total;
+        }
+    </script>
+    <script>
+        function submitBtn() {
+            var name = $("#name").val();
+            var client = $("#client").val();
+            var proposal_by = $("#proposal_by").val();
+            var proposal_validity = $("#proposal_validity").val();
+            var email = $("#email").val();
+            var pro_project_lead = $("#pro_project_lead").val();
+            var pro_client_servicing = $("#pro_client_servicing").val();
+            var pro_creative_director = $("#pro_creative_director").val();
+            var pro_medical_lead = $("#pro_medical_lead").val();
+            var doc_id = $("#doc_id").val();
+            if (name == "" || client == "" || proposal_by == "" || proposal_validity == "" || email == "") {
+                swal({
+                    text: "Please Check If Name , Client , Proposal By , Proposal Validity  or Email Field is Empty."
+                });
+            } else if (pro_project_lead == "" || pro_client_servicing == "" || pro_creative_director == "" ||
+                pro_medical_lead == "") {
+                swal({
+                    text: "Please Check If Project Lead , Client Servicing , Creative or Medical Lead is Empty."
+                });
+            } else if (doc_id != "") {
+                swal({
+                    text: "Thank you, for submitting Proposal. We will get back to you shortly."
+                }).then((value) => {
+                    $("#form1").submit();
+                });
+            } else {
+                swal({
+                    text: "Your link has been shared successfully to " + name + "."
+                }).then((value) => {
+                    $("#form1").submit();
+                });
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function setCurrency() {
+            swal({
+                input: 'select',
+                inputOptions: {
+                    'USD': 'Dollar',
+                    'INR': 'Indian Rupee',
+                    'SGD': 'Singapore Dollar',
+                }
+            }).then((result) => {
+                $("#currency").val(result);
+                $("label[id='text_currency']").text(result);
+            });
+        }
+    </script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+
+</html>

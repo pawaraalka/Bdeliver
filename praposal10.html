@@ -77,28 +77,25 @@
             font-weight: 700;
             color: #2a517478;
         }
+
+        .nextbtn {
+            background: #102a42;
+            padding: 6px 33px;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 auto !important;
+            text-align: center;
+            border: none;
+
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="row">
-        <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
-            <div class="slides">
-                <h1 class="headingOne">
-                    <!-- 07. <span class="headingTwo">APPROVALS</span> -->
-                    <input name="seven_heading" id="seven_heading" value="7. Approvals" type="text"
-                        class="validate cust-heading">
-                </h1>
-                <p class="paragraph">
-                    <textarea class="materialize-textarea" name="seven_text" id="seven_text"
-                        type="text">Work In Progress will be shared at appropriate time intervals. Timely approvals will help deliver the project in estimated time.</textarea>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="clearfix"></div>
-    <div class-"divider" style="height: 10px; background-color: #e0e0e0; margin:120px 10px 60px;"></div>
+
     <div class="row">
         <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
             <div class="slides">
@@ -108,7 +105,7 @@
          RELEASE FORMAT
          </span> -->
                     <input name="eight_heading" id="eight_heading" value="8. Release Format" type="text"
-                        class="validate input-cust-heading">
+                        class="validate cust-heading">
                 </h1>
                 <p class="paragraph">
                     <!-- All print artworks will be released in CQ Adobe Illustrator (.AI files) or high resolution pdf. All digital inputs will be released as specified by the client. All Work In Progress Files will be shared as jpegs and pdfs.  -->
@@ -120,8 +117,8 @@
                             type="text">Kindly note: All final artworks will be released through our file transfer portal - bdeliver. Unique username, and password will be shared with the client team for their account. You can access your account for downloading released files.</textarea>
                     </span>
                 </p>
-                <div class="col xxxl6 xxl6 xl6 l6 m12 s12">
-                    <p>For Brandcare</p>
+                <div class="input-field col width100 pd-input marTop20">
+                    <p><b>For Brandcare</b></p>
                     <div class="input-field col m4 s12">
                         <input name="bc_name" id="bc_name" type="text" class="validate">
                         <label for="first_name" class="clientDetails2">Name</label>
@@ -139,7 +136,7 @@
                         <label for="first_name" class="clientDetails2">Date</label>
                     </div>
                 </div>
-                <div class="col xxxl6 xxl6 xl6 l6 m12 s12">
+                <div class="input-field col width100 pd-input marTop20">
                     <p>For Client</p>
                     <div class="input-field col m4 s12">
                         <input name="cc_name" id="cc_name" type="text" class="validate">
@@ -163,79 +160,8 @@
         </div><br><br><br><br><br><br>
         <div class="clearfix"></div>
         <!-- </form> -->
-        <center>
-            <button class="modal-trigger submitBtn" onclick="submitBtn()" type="button">Send</button>
-        </center>
-        <div class="footer">
-            <div class="row">
-                <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
-                    <div class="col l3 s12">
-                        <img src="https://bdeliver.net/bdelivernew/images/Brandcare-logo.png"
-                            class="responsive-img logo" alt="logo" data-pagespeed-url-hash="1229339762"
-                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
-                    </div>
-                    <!-- <div class="col l2 s12">
-         <h5 class="left-align footerHeading">Address</h5>
-         <ul>
-         	<li>405, Sunrise Business Park, Plot No. B-68, Road No. 16, MIDC, Wagle Estate, Thane W - 400604. </li>
-         </ul>
-         </div> -->
-                    <div class="col l2 s12">
-                        <h5 class="left-align footerHeading">Project Lead</h5>
-                        <ul>
-                            <li>
-                                <div class="input-field">
-                                    <input id="pro_project_lead" placeholder="TYPE HERE" name="pro_project_lead"
-                                        type="text" class="validate" required>
-                                    <!-- <label for="pro_project_lead" class="inputText">type here</label> -->
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l2 s12">
-                        <h5 class="left-align footerHeading">Client Servicing</h5>
-                        <ul>
-                            <li>
-                                <div class="input-field">
-                                    <input id="pro_client_servicing" placeholder="TYPE HERE" type="text"
-                                        name="pro_client_servicing" class="validate" required>
-                                    <!-- <label for="pro_client_servicing" class="inputText">type here</label> -->
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l2 s12">
-                        <h5 class="left-align footerHeading">Creative</h5>
-                        <ul>
-                            <li>
-                                <div class="input-field">
-                                    <input id="pro_creative_director" placeholder="TYPE HERE" type="text"
-                                        name="pro_creative_director" class="validate" required>
-                                    <!-- <label for="pro_creative_director" class="inputText">type here</label> -->
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l2 s12">
-                        <h5 class="left-align footerHeading">Medical Lead</h5>
-                        <ul>
-                            <li>
-                                <div class="input-field">
-                                    <input id="pro_medical_lead" type="text" placeholder="TYPE HERE"
-                                        name="pro_medical_lead" class="validate" required>
-                                    <!-- <label for="pro_medical_lead" class="inputText">type here</label> -->
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container copyright">© 2023 Brandcare Medical Advertising & Consultancy Pvt. Ltd. All Rights
-                    Reserved.
-                </div>
-            </div>
-        </div>
+
+
         </form>
         <a href="https://bdeliver.net/bdelivernew/home" style="margin-right: 80px;" class="logout">Home</a>
         <!-- <a href="https://bdeliver.net/bdelivernew/changePassword" style="margin-right: 150px;" class="logout">Change Password</a> -->
@@ -248,6 +174,11 @@
         </form>
 
     </div>
+
+    <center>
+        <a href="praposal10.html"><button class="modal-trigger nextbtn" type="button">Next</button></a>
+    </center>
+    <br>
     <!--Import jQuery before materialize.js-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/sweetalert2/6.4.1/sweetalert2.js"></script>
