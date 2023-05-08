@@ -114,9 +114,7 @@
             margin-top: 33px;
         }
 
-        .input-field.width100.pd-input {
-            padding: 0px 12px;
-        }
+
 
         .footer {
             position: relative;
@@ -129,51 +127,23 @@
             padding-bottom: 10px;
         }
 
-        .footer-copyright {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-        }
-
         .input-field input {
-            margin: 0 0 0px 0;
-            height: 2rem !important;
+            margin: 0 0 0px 0 !important;
+            height: 2.5rem !important;
 
 
         }
 
-        @media screen and (max-width: 576px) {
-            .footer-copyright {
-                position: static;
-                bottom: 10px;
-                width: 100%;
-            }
+        /* .input-field.pd {
+            padding: 0px 12px;
+        } */
 
-            .nextbtn {
-                background: #102a42;
-                padding: 6px 33px;
-                font-family: 'Roboto', sans-serif;
-                color: #fff;
-                font-size: 20px;
-                font-weight: 500;
-                margin: 10px auto !important;
-                text-align: center;
-                position: relative;
-                border: none;
-                right: 3%;
-                bottom: -2%;
-            }
+        .dateOfLAunch {
+            margin-left: 0px !important;
+        }
 
-            .headingTwo {
-                font-size: 32px;
-                position: absolute;
-                top: 0px;
-                line-height: 26px;
-                left: 140px;
-                text-transform: uppercase;
-                font-weight: 700;
-                color: #2a517478;
-            }
+        .input-field p {
+            padding-left: 8px;
         }
     </style>
 </head>
@@ -181,89 +151,110 @@
 <body>
     <div id="container">
 
-
-        <div class="footer">
-            <div class="row">
-                <div class="input-field width100 ">
-                    <span class="headingTwo">Brand co-ordination team<br></span>
+        <!-- <div class="row header">
+            <div class="col offset-l2 l8 offset-xxxl2 xxxl8">
+                <div class="home_slider_content text-center">
+                    <div class="home_slider_content_inner">
+                        <h1>brand</h1>
+                        <h1>brief</h1>
+                        <h1 class="tagLine">We'd love to craft the brief with you. Talk to us.</h1>
+                    </div>
                 </div>
-                <br><br>
             </div>
-            <div class="row">
-
-                <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
+        </div> -->
 
 
 
+        <div class="row">
+            <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
+                <div class="slides">
+                    <h1 class="headingOne">08. <span class="headingTwo">Brand co-ordination team</span></h1>
 
 
-                    <div class="input-field width100 col ">
-                        <h5 class="left-align footerHeading">Project Lead</h5>
-                        <ul>
-                            <li>
-                                <div class="input-field">
-                                    <input id="project_lead" placeholder='TYPE HERE' name="project_lead" type="text"
-                                        class="validate">
-                                    <!-- <label for="project_lead" class="inputText">type here</label> -->
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="input-field col width100 pd-input marTop20">
+                        <p>Marketing Lead</p>
+                        <div class="input-field pd col m4 s12">
+                            <input id="last_name" name="marketing_lead_name" type="text" class="validate">
+                            <label for="first_name" class="clientDetails2 dateOfLAunch">Name</label>
+                        </div>
+                        <div class="input-field pd col m4 s12">
+                            <input id="last_name" name="marketing_lead_client" type="text" class="validate">
+                            <label for="first_name" class="clientDetails2 dateOfLAunch">Client</label>
+                        </div>
+                        <div class="input-field pd col m4 s12">
+                            <input id="last_name" name="marketing_lead_brand" type="text" class="validate">
+                            <label for="first_name" class="clientDetails2 dateOfLAunch">Brand</label>
+                        </div>
                     </div>
-                    <div class="input-field width100 col ">
-                        <h5 class="left-align footerHeading">Client Servicing</h5>
-                        <ul>
-                            <li>
-                                <div class="input-field">
-                                    <input id="client_servicing" placeholder='TYPE HERE' type="text"
-                                        name="client_servicing" class="validate">
-                                    <!-- <label for="client_servicing" class="inputText">type here</label> -->
-                                </div>
-                            </li>
-                        </ul>
+
+
+
+                    <div class="input-field col width100  marTop20">
+                        <p>Brand Lead</p>
+                        <!-- <form style="margin-top:-20px;"> -->
+                        <div class="input-field pd col m4 s12">
+                            <input id="last_name" name="brand_lead_name" type="text" class="validate">
+                            <label for="first_name" class="clientDetails2 dateOfLAunch">Name</label>
+                        </div>
+                        <div class="input-field pd col m4 s12">
+                            <input id="last_name" name="brand_lead_client" type="text" class="validate">
+                            <label for="first_name" class="clientDetails2 dateOfLAunch">Client</label>
+                        </div>
+                        <div class="input-field pd col m4 s12">
+                            <input id="last_name" name="brand_lead_brand" type="text" class="validate">
+                            <label for="first_name" class="clientDetails2 dateOfLAunch">Brand</label>
+                        </div>
                     </div>
-                    <div class="input-field width100 col ">
-                        <h5 class="left-align footerHeading">Creative</h5>
-                        <ul>
-                            <li>
-                                <div class="input-field">
-                                    <input id="creative_director" placeholder='TYPE HERE' type="text"
-                                        name="creative_director" class="validate">
-                                    <!-- <label for="creative_director" class="inputText">type here</label> -->
-                                </div>
-                            </li>
-                        </ul>
+
+
+
+                    <div class="input-field col width100  marTop20">
+                        <p>Medical Lead</p>
+                        <!-- <form style="margin-top:-20px;"> -->
+                        <div class="input-field pd col m4 s12">
+                            <input id="last_name" type="text" name="medical_lead_name" class="validate">
+                            <label for="first_name" class="clientDetails2 dateOfLAunch">Name</label>
+                        </div>
+                        <div class="input-field pd col m4 s12">
+                            <input id="last_name" type="text" name="medical_lead_client" class="validate">
+                            <label for="first_name" class="clientDetails2 dateOfLAunch">Client</label>
+                        </div>
+                        <div class="input-field pd col m4 s12">
+                            <input id="last_name" type="text" name="medical_lead_brand" class="validate">
+                            <label for="first_name" class="clientDetails2 dateOfLAunch">Brand</label>
+                        </div>
                     </div>
-                    <div class="input-field width100 col ">
-                        <h5 class="left-align footerHeading">Medical Lead</h5>
-                        <ul>
-                            <li>
-                                <div class="input-field">
-                                    <input id="medical_lead" placeholder='TYPE HERE' type="text" name="medical_lead"
-                                        class="validate">
-                                    <!-- <label for="medical_lead" class="inputText">type here</label> -->
-                                </div>
-                            </li>
-                        </ul>
+
+                    <div class="input-field col width100  marTop20">
+                        <p>Purchase Lead</p>
+                        <!-- <form style="margin-top:-20px;"> -->
+                        <div class="input-field pd col m4 s12">
+                            <input id="last_name" type="text" name="purchase_lead_name" class="validate">
+                            <label for="first_name" class="clientDetails2 dateOfLAunch">Name</label>
+                        </div>
+                        <div class="input-field pd col m4 s12">
+                            <input id="last_name" type="text" name="purchase_lead_email" class="validate">
+                            <label for="first_name" class="clientDetails2 dateOfLAunch">Client</label>
+                        </div>
+                        <div class="input-field pd col m4 s12">
+                            <input id="last_name" type="text" name="purchase_lead_mobile" class="validate">
+                            <label for="first_name" class="clientDetails2 dateOfLAunch">Brand</label>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
         </div>
+
         <!-- </form>	 -->
     </div>
 
     <!-- </form> -->
-    </br>
-    </br>
     <center>
-        <button class="modal-trigger nextbtn" type="button">send</button>
+        <a href="brand_footer.html"> <button class="modal-trigger nextbtn" type="button">Next</button> </a>
     </center>
-    <div class="footer-copyright">
-        <div class="container copyright">© 2023 Brandcare Medical Advertising & Consultancy Pvt. Ltd. All Rights
-            Reserved.
-        </div>
-    </div>
-
+    <br>
     <!-- <center>
         <button class="modal-trigger submitBtn" onclick="submitBtn()" type="button">Send</button>
     </center> -->

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://bdeliver.net/bdelivernew/css/materialize.css" />
+    <link type="text/css" rel="stylesheet" href="https://bdeliver.net/bdelivernew/css/docTransfer.css" />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/sweetalert2/6.4.1/sweetalert2.css" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
+
+    <!-- <link href="https://bdeliver.net/bdelivernew/css/jquery.uploadPreviewer.css" rel="stylesheet" /> -->
+    <link href="https://bdeliver.net/bdelivernew/css/materialnote.css" rel="stylesheet" type="text/css">
+    <script src="https://bdeliver.net/bdelivernew/js/materialnote.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docintosh Proposal</title>
+    <style type="text/css">
+        #errmsg {
+            color: red
+        }
+
+        .headingOne input.cust-heading {
+            font-size: 3rem !important
+        }
+
+        .mt-0 {
+            margin-top: 0 !important
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0
+        }
+
+        .logout {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #2a517478;
+            text-transform: uppercase;
+            font-weight: 300;
+            cursor: pointer;
+            letter-spacing: .7px;
+            z-index: 10;
+        }
+
+        .headingTwo {
+            font-size: 50px;
+            position: absolute;
+            top: 15px;
+            line-height: 26px;
+            left: 140px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #2a517478;
+        }
+
+        .headingOne input.cust-heading {
+            font-size: 3rem !important;
+
+        }
+
+        .nextbtn {
+            background: #102a42;
+            padding: 6px 33px;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 auto !important;
+            text-align: center;
+            border: none;
+            float: right;
+            /* position: absolute;
+            right: 10%;
+            bottom: -10%; */
+        }
+
+        .headingOne input.cust-heading {
+
+            font-size: 3rem !important;
+
+            font-weight: 700 !important;
+
+            color: #2a517478;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="row">
+            <form id="form1" method="POST" action="https://bdeliver.net/bdelivernew/docintoshwebsiteproposal">
+                <input type="hidden" name="_token" value="7VH0nB6YIK95hEFSOw7ZuUnPT7wNK7N2gvBHWyqY">
+
+                <div class="row">
+                    <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
+                        <div class="" style="position: relative;">
+                            <h1 class="headingOne">
+                                <!-- 02. <span class="headingTwo">Scope of Work <br><span class="headingThree">What you want the agency to do for you?</span></span> -->
+                                <input name="second_heading" id="second_heading" value="2. Scope of Work" type="text"
+                                    class="validate cust-heading">
+                                <input name="second_head_text" id="second_head_text"
+                                    value="What you want the agency to do for you?" type="text" class="validate">
+                            </h1>
+
+                            <table class="stripedaddmore">
+                                <thead>
+                                    <tr>
+                                        <th>UI/UX</th>
+                                        <th>Phase 1</th>
+                                        <th>Phase 2</th>
+                                        <th>Phase 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="fontWeight900">
+                                                <div class="input-field">
+                                                    <input name="ui_subpoint[]" type="text" class="validate">
+                                                    <label for="last_name">Type/write here</label>
+                                                </div>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="phase1[]" type="number" min="0" class="validate ui_phase1">
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="phase2[]" min="0" type="number" class="validate ui_phase2">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="phase3[]" min="0" type="number" class="validate ui_phase3">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="javascript:void(0);" class="add_button" title="Add field"><img
+                                                    src="https://bdeliver.net/bdelivernew/public/images/add-icon.png"
+                                                    data-pagespeed-url-hash="1615109845"
+                                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td><b>Total</b></td>
+                                        <td><input name="total_ui_phase1" id="total_ui_phase1" value="0" type="text">
+                                        </td>
+                                        <td><input name="total_ui_phase2" id="total_ui_phase2" value="0" type="text">
+                                        </td>
+                                        <td><input name="total_ui_phase3" id="total_ui_phase3" value="0" type="text">
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table><br>
+
+                            <table class="Content">
+                                <thead>
+                                    <tr>
+                                        <th>Content</th>
+                                        <th>Phase 1</th>
+                                        <th>Phase 2</th>
+                                        <th>Phase 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="fontWeight900">
+                                                <div class="input-field">
+                                                    <input name="content_subpoint[]" type="text" class="validate">
+                                                    <label for="last_name">Type/write here</label>
+                                                </div>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="content_phase1[]" type="number" min="0"
+                                                    class="validate content_phase1">
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="content_phase2[]" min="0" type="number"
+                                                    class="validate content_phase2">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="content_phase3[]" min="0" type="number"
+                                                    class="validate content_phase3">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="javascript:void(0);" class="add_button2" title="Add field"><img
+                                                    src="https://bdeliver.net/bdelivernew/public/images/add-icon.png"
+                                                    data-pagespeed-url-hash="1615109845"
+                                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td><b>Total</b></td>
+                                        <td><input name="total_content_phase1" id="total_content_phase1" value="0"
+                                                type="text"> </td>
+                                        <td><input name="total_content_phase2" id="total_content_phase2" value="0"
+                                                type="text"> </td>
+                                        <td><input name="total_content_phase3" id="total_content_phase3" value="0"
+                                                type="text"> </td>
+                                    </tr>
+                                </tfoot>
+                            </table><br>
+
+                            <table class="seo">
+                                <thead>
+                                    <tr>
+                                        <th>SEO</th>
+                                        <th>Phase 1</th>
+                                        <th>Phase 2</th>
+                                        <th>Phase 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="fontWeight900">
+                                                <div class="input-field">
+                                                    <input name="seo_subpoint[]" type="text" class="validate">
+                                                    <label for="last_name">Type/write here</label>
+                                                </div>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="seo_phase1[]" type="number" min="0"
+                                                    class="validate seo_phase1">
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="seo_phase2[]" min="0" type="number"
+                                                    class="validate seo_phase2">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="seo_phase3[]" min="0" type="number"
+                                                    class="validate seo_phase3">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="javascript:void(0);" class="add_button3" title="Add field"><img
+                                                    src="https://bdeliver.net/bdelivernew/public/images/add-icon.png"
+                                                    data-pagespeed-url-hash="1615109845"
+                                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td><b>Total</b></td>
+                                        <td><input name="total_seo_phase1" id="total_seo_phase1" value="0" type="text">
+                                        </td>
+                                        <td><input name="total_seo_phase2" id="total_seo_phase2" value="0" type="text">
+                                        </td>
+                                        <td><input name="total_seo_phase3" id="total_seo_phase3" value="0" type="text">
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table><br>
+
+                            <table class="development">
+                                <thead>
+                                    <tr>
+                                        <th>Development</th>
+                                        <th>Phase 1</th>
+                                        <th>Phase 2</th>
+                                        <th>Phase 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="fontWeight900">
+                                                <div class="input-field">
+                                                    <input name="development_subpoint[]" type="text" class="validate">
+                                                    <label for="last_name">Type/write here</label>
+                                                </div>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="development_phase1[]" type="number" min="0"
+                                                    class="validate development_phase1">
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="development_phase2[]" min="0" type="number"
+                                                    class="validate development_phase2">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="development_phase3[]" min="0" type="number"
+                                                    class="validate development_phase3">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="javascript:void(0);" class="add_button4" title="Add field"><img
+                                                    src="https://bdeliver.net/bdelivernew/public/images/add-icon.png"
+                                                    data-pagespeed-url-hash="1615109845"
+                                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td><b>Total</b></td>
+                                        <td><input name="total_development_phase1" id="total_development_phase1"
+                                                value="0" type="text"> </td>
+                                        <td><input name="total_development_phase2" id="total_development_phase2"
+                                                value="0" type="text"> </td>
+                                        <td><input name="total_development_phase3" id="total_development_phase3"
+                                                value="0" type="text"> </td>
+                                    </tr>
+                                </tfoot>
+                            </table><br>
+
+                            <table class="other">
+                                <thead>
+                                    <tr>
+                                        <th><input name="head_other" type="text" class="" value="Other"></th>
+                                        <th>Phase 1</th>
+                                        <th>Phase 2</th>
+                                        <th>Phase 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="fontWeight900">
+                                                <div class="input-field">
+                                                    <input name="other_subpoint[]" type="text" class="validate">
+                                                    <label for="last_name">Type/write here</label>
+                                                </div>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="other_phase1[]" type="number" min="0"
+                                                    class="validate other_phase1">
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="other_phase2[]" min="0" type="number"
+                                                    class="validate other_phase2">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-field">
+                                                <input name="other_phase3[]" min="0" type="number"
+                                                    class="validate other_phase3">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="javascript:void(0);" class="add_button5" title="Add field"><img
+                                                    src="https://bdeliver.net/bdelivernew/public/images/add-icon.png"
+                                                    data-pagespeed-url-hash="1615109845"
+                                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td><b>Total</b></td>
+                                        <td><input name="total_other_phase1" id="total_other_phase1" value="0"
+                                                type="text"> </td>
+                                        <td><input name="total_other_phase2" id="total_other_phase2" value="0"
+                                                type="text"> </td>
+                                        <td><input name="total_other_phase3" id="total_other_phase3" value="0"
+                                                type="text"> </td>
+                                    </tr>
+                                </tfoot>
+                            </table><br>
+
+                            <table>
+                                <tr>
+                                    <td><b>Grand Total</b></td>
+                                    <td><input name="total_grand_phase1" id="total_grand_phase1" value="0" type="text">
+                                    </td>
+                                    <td><input name="total_grand_phase2" id="total_grand_phase2" value="0" type="text">
+                                    </td>
+                                    <td><input name="total_grand_phase3" id="total_grand_phase3" value="0" type="text">
+                                    </td>
+                                </tr>
+                            </table>
+
+
+
+                            <h3 class="headingSix"><input name="additional_service" value="ADDITIONAL"
+                                    id="additional_service" type="text" class="validate"></h3>
+                            <table class="striped">
+                                <tbody>
+                                    <tr>
+                                        <td><span class="fontWeight900"><input name="additional_taxation"
+                                                    id="additional_taxation" value="Taxation" type="text"
+                                                    class="validate"></span></td>
+                                        <td>
+                                            <div class="input-field mt-0">
+                                                <input name="addproject_taxvalue" id="addproject_taxvalue" type="number"
+                                                    min="0" class="validate"> <!-- <span>%</span> -->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h3 class="headingSix"><input name="additional_service" value="ADDITIONAL SERVICES"
+                                    id="additional_service" type="text" class="validate"></h3>
+                            <p class="paragraph">
+                                <textarea class="materialize-textarea" name="additional_service_text"
+                                    id="additional_service_text"
+                                    type="text">Campaign related services like translations, photo touch ups, photo-shoots, elaborate illustrations, image purchases will be charged separately with prior consent from the client.</textarea>
+                            </p>
+
+                        </div>
+
+                        <center>
+                            <a href="Website-Proposal5.html"><button class="modal-trigger nextbtn"
+                                    type="button">Next</button></a>
+                        </center>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/sweetalert2/6.4.1/sweetalert2.js"></script>
+
+    <script type="text/javascript">
+        function setCurrency() {
+            swal({
+                input: 'select',
+                inputOptions: {
+                    'USD': 'Dollar',
+                    'INR': 'Indian Rupee',
+                }
+            }).then((result) => {
+                $("#currency").val(result);
+                $("label[id='text_currency']").text(result);
+            });
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".add_button").click(function () {
+                $(".stripedaddmore").append(
+                    '<tr><td><span class="fontWeight900"><div class="input-field"><input name="ui_subpoint[]" type="text" class="validate "><label for="last_name">Type/write here</label></div></span></td><td><div class="input-field"><input name="phase1[]" type="number" min="0" class="validate ui_phase1"></div></td><td><div class="input-field"><input name="phase2[]" min="0" type="number" class="validate ui_phase2"></div></td><td><div class="input-field"><input name="phase3[]" min="0" type="number" class="validate ui_phase3"></div></td><td><a href="javascript:void(0);" class="remove_button" title="Add field"><img src="https://bdeliver.net/bdelivernew/public/images/remove-icon.png"/></a></td></tr>'
+                );
+            });
+            $(".stripedaddmore").on('click', '.remove_button', function () {
+                $(this).parent().parent().remove();
+            });
+        });
+        $(document).on('keyup', '.ui_phase1', function () {
+            var total = 0;
+            $('.ui_phase1').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_ui_phase1").value = total;
+        });
+        $(document).on('keyup', '.ui_phase2', function () {
+            var total = 0;
+            $('.ui_phase2').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_ui_phase2").value = total;
+        });
+        $(document).on('keyup', '.ui_phase3', function () {
+            var total = 0;
+            $('.ui_phase3').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_ui_phase3").value = total;
+        });
+    </script>
+
+    <!-- Content -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".add_button2").click(function () {
+                $(".Content").append(
+                    '<tr><td><span class="fontWeight900"><div class="input-field"><input name="content_subpoint[]" type="text" class="validate "><label for="last_name">Type/write here</label></div></span></td><td><div class="input-field"><input name="content_phase1[]" type="number" min="0" class="validate content_phase1"></div></td><td><div class="input-field"><input name="content_phase2[]" min="0" type="number" class="validate content_phase2"></div></td><td><div class="input-field"><input name="content_phase3[]" min="0" type="number" class="validate content_phase3"></div></td><td><a href="javascript:void(0);" class="remove_button" title="Add field"><img src="https://bdeliver.net/bdelivernew/public/images/remove-icon.png"/></a></td></tr>'
+                );
+            });
+            $(".Content").on('click', '.remove_button', function () {
+                $(this).parent().parent().remove();
+            });
+        });
+        $(document).on('keyup', '.content_phase1', function () {
+            var total = 0;
+            $('.content_phase1').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_content_phase1").value = total;
+        });
+        $(document).on('keyup', '.content_phase2', function () {
+            var total = 0;
+            $('.content_phase2').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_content_phase2").value = total;
+        });
+        $(document).on('keyup', '.content_phase3', function () {
+            var total = 0;
+            $('.content_phase3').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_content_phase3").value = total;
+        });
+    </script>
+
+    <!-- seo -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".add_button3").click(function () {
+                $(".seo").append(
+                    '<tr><td><span class="fontWeight900"><div class="input-field"><input name="seo_subpoint[]" type="text" class="validate "><label for="last_name">Type/write here</label></div></span></td><td><div class="input-field"><input name="seo_phase1[]" type="number" min="0" class="validate seo_phase1"></div></td><td><div class="input-field"><input name="seo_phase2[]" min="0" type="number" class="validate seo_phase2"></div></td><td><div class="input-field"><input name="seo_phase3[]" min="0" type="number" class="validate seo_phase3"></div></td><td><a href="javascript:void(0);" class="remove_button" title="Add field"><img src="https://bdeliver.net/bdelivernew/public/images/remove-icon.png"/></a></td></tr>'
+                );
+            });
+            $(".seo").on('click', '.remove_button', function () {
+                $(this).parent().parent().remove();
+            });
+        });
+        $(document).on('keyup', '.seo_phase1', function () {
+            var total = 0;
+            $('.seo_phase1').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_seo_phase1").value = total;
+        });
+        $(document).on('keyup', '.seo_phase2', function () {
+            var total = 0;
+            $('.seo_phase2').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_seo_phase2").value = total;
+        });
+        $(document).on('keyup', '.seo_phase3', function () {
+            var total = 0;
+            $('.seo_phase3').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_seo_phase3").value = total;
+        });
+        $(window).keyup(function () {
+            $('#total_grand_phase1').val(parseFloat($('#total_ui_phase1').val()) + parseFloat($(
+                '#total_content_phase1').val()) + parseFloat($('#total_seo_phase1').val()) + parseFloat(
+                $('#total_development_phase1').val()) + parseFloat($('#total_other_phase1').val()));
+            $('#total_grand_phase2').val(parseFloat($('#total_ui_phase2').val()) + parseFloat($(
+                '#total_content_phase2').val()) + parseFloat($('#total_seo_phase2').val()) + parseFloat(
+                $('#total_development_phase2').val()) + parseFloat($('#total_other_phase2').val()));
+            $('#total_grand_phase3').val(parseFloat($('#total_ui_phase3').val()) + parseFloat($(
+                '#total_content_phase3').val()) + parseFloat($('#total_seo_phase3').val()) + parseFloat(
+                $('#total_development_phase3').val()) + parseFloat($('#total_other_phase3').val()));
+        });
+    </script>
+
+
+    <!-- Development -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".add_button4").click(function () {
+                $(".development").append(
+                    '<tr><td><span class="fontWeight900"><div class="input-field"><input name="development_subpoint[]" type="text" class="validate "><label for="last_name">Type/write here</label></div></span></td><td><div class="input-field"><input name="development_phase1[]" type="number" min="0" class="validate development_phase1"></div></td><td><div class="input-field"><input name="development_phase2[]" min="0" type="number" class="validate development_phase2"></div></td><td><div class="input-field"><input name="development_phase3[]" min="0" type="number" class="validate development_phase3"></div></td><td><a href="javascript:void(0);" class="remove_button" title="Add field"><img src="https://bdeliver.net/bdelivernew/public/images/remove-icon.png"/></a></td></tr>'
+                );
+            });
+            $(".development").on('click', '.remove_button', function () {
+                $(this).parent().parent().remove();
+            });
+        });
+        $(document).on('keyup', '.development_phase1', function () {
+            var total = 0;
+            $('.development_phase1').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_development_phase1").value = total;
+        });
+        $(document).on('keyup', '.development_phase2', function () {
+            var total = 0;
+            $('.development_phase2').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_development_phase2").value = total;
+        });
+        $(document).on('keyup', '.development_phase3', function () {
+            var total = 0;
+            $('.development_phase3').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_development_phase3").value = total;
+        });
+    </script>
+
+    <!-- Other -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".add_button5").click(function () {
+                $(".other").append(
+                    '<tr><td><span class="fontWeight900"><div class="input-field"><input name="other_subpoint[]" type="text" class="validate "><label for="last_name">Type/write here</label></div></span></td><td><div class="input-field"><input name="other_phase1[]" type="number" min="0" class="validate other_phase1"></div></td><td><div class="input-field"><input name="other_phase2[]" min="0" type="number" class="validate other_phase2"></div></td><td><div class="input-field"><input name="other_phase3[]" min="0" type="number" class="validate other_phase3"></div></td><td><a href="javascript:void(0);" class="remove_button" title="Add field"><img src="https://bdeliver.net/bdelivernew/public/images/remove-icon.png"/></a></td></tr>'
+                );
+            });
+            $(".other").on('click', '.remove_button', function () {
+                $(this).parent().parent().remove();
+            });
+        });
+        $(document).on('keyup', '.other_phase1', function () {
+            var total = 0;
+            $('.other_phase1').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_other_phase1").value = total;
+        });
+        $(document).on('keyup', '.other_phase2', function () {
+            var total = 0;
+            $('.other_phase2').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_other_phase2").value = total;
+        });
+        $(document).on('keyup', '.other_phase3', function () {
+            var total = 0;
+            $('.other_phase3').each(function () {
+                total += parseFloat($(this).val());
+            })
+            document.getElementById("total_other_phase3").value = total;
+        });
+    </script>
+
+
+    <script>
+        function submitBtn() {
+            var name = $("#name").val();
+            var client = $("#client").val();
+            var proposal_by = $("#proposal_by").val();
+            var proposal_validity = $("#proposal_validity").val();
+            var email = $("#email").val();
+            var pro_project_lead = $("#pro_project_lead").val();
+            var pro_client_servicing = $("#pro_client_servicing").val();
+            var pro_creative_director = $("#pro_creative_director").val();
+            var pro_medical_lead = $("#pro_medical_lead").val();
+            var doc_id = $("#doc_id").val();
+            if (name == "" || client == "" || proposal_by == "" || proposal_validity == "" || email == "") {
+                swal({
+                    text: "Please Check If Name , Client , Proposal By , Proposal Validity  or Email Field is Empty."
+                });
+            } else if (pro_project_lead == "" || pro_client_servicing == "" || pro_creative_director == "" ||
+                pro_medical_lead == "") {
+                swal({
+                    text: "Please Check If Project Lead , Client Servicing , Creative or Medical Lead is Empty."
+                });
+            } else if (doc_id != "") {
+                swal({
+                    text: "Thank you, for submitting Proposal. We will get back to you shortly."
+                }).then((value) => {
+                    $("#form1").submit();
+                });
+            } else {
+                swal({
+                    text: "Your link has been shared successfully to " + name + "."
+                }).then((value) => {
+                    $("#form1").submit();
+                });
+            }
+        }
+    </script>
+
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+</body>
+
+</html>

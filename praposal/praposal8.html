@@ -88,7 +88,7 @@
             margin: 0 auto !important;
             text-align: center;
             border: none;
-            float: right;
+
         }
     </style>
 </head>
@@ -100,87 +100,33 @@
         <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
             <div class="slides">
                 <h1 class="headingOne">
-                    <!-- 08. 
-         <span class="headingTwo">
-         RELEASE FORMAT
-         </span> -->
-                    <input name="eight_heading" id="eight_heading" value="8. Release Format" type="text"
+                    <!-- 06. <span class="headingTwo">DOCUMENTATION  <br><span class="headingThree"></span></span> -->
+                    <input name="six_heading" id="six_heading" value="6. Documentation" type="text"
                         class="validate cust-heading">
                 </h1>
+                <h3 class="headingSix">
+                    <!-- For Brandcare -->
+                    <input name="for_brandcare" id="for_brandcare" value="For Brandcare" type="text" class="validate">
+                </h3>
                 <p class="paragraph">
-                    <!-- All print artworks will be released in CQ Adobe Illustrator (.AI files) or high resolution pdf. All digital inputs will be released as specified by the client. All Work In Progress Files will be shared as jpegs and pdfs.  -->
-                    <textarea class="materialize-textarea" name="eight_text" id="eight_text"
-                        type="text">All print artworks will be released in CQ Adobe Illustrator (.AI files) or high resolution pdf. All digital inputs will be released as specified by the client. All Work In Progress Files will be shared as jpegs and pdfs.</textarea>
-                    <span class="fontWeight900">
-                        <!-- Kindly note: All final artworks will be released through our file transfer portal - bdeliver. Unique username, and password will be shared with the client team for their account. You can access your account for downloading released files. -->
-                        <textarea class="materialize-textarea" name="eight_note" id="eight_note"
-                            type="text">Kindly note: All final artworks will be released through our file transfer portal - bdeliver. Unique username, and password will be shared with the client team for their account. You can access your account for downloading released files.</textarea>
-                    </span>
+                    <textarea class="materialize-textarea" name="six_text_brandcare" id="six_text"
+                        type="text">A document in the order of a contract or purchase order and an agreement with this document as addendum signed by relevant authorities from the client and agency at the beginning of the project is highly appreciated.</textarea>
                 </p>
-                <div class="input-field col width100 pd-input marTop20">
-                    <p><b>For Brandcare</b></p>
-                    <div class="input-field col m4 s12">
-                        <input name="bc_name" id="bc_name" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Name</label>
-                    </div>
-                    <div class="input-field col m4 s12">
-                        <input name="bc_designate" id="bc_designate" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Designation</label>
-                    </div>
-                    <!--<div class="input-field col m3 s12">
-         <input name="bc_signature"   id="bc_signature" type="text" class="validate">
-         <label for="first_name" class="clientDetails2">Signature</label>
-         </div>-->
-                    <div class="input-field col m4 s12">
-                        <input name="bc_date" id="bc_date" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Date</label>
-                    </div>
-                </div>
-                <div class="input-field col width100 pd-input marTop20">
-                    <p><b>For Client</b></p>
-                    <div class="input-field col m4 s12">
-                        <input name="cc_name" id="cc_name" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Name</label>
-                    </div>
-                    <div class="input-field col m4 s12">
-                        <input name="cc_designate" id="cc_designate" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Designation</label>
-                    </div>
-                    <!-- <div class="input-field col m3 s12">
-         <input name="cc_signature"   id="cc_signature" type="text" class="validate">
-         <label for="first_name" class="clientDetails2">Signature</label>
-         </div> -->
-                    <div class="input-field col m4 s12">
-                        <input name="cc_date" id="cc_date" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Date</label>
-                    </div>
-                    </dvi>
-                </div>
+                <div class="division2"></div>
+                <h3 class="headingSix">
+                    <!-- For Client -->
+                    <input name="for_client" id="for_client" value="For Client" type="text" class="validate">
+                </h3>
+                <p class="paragraph">
+                    <textarea class="materialize-textarea" name="six_text_client" id="six_text_client"
+                        type="text">Please specify the supporting documentation required by your purchase, accounts and approving authorities that need to be attached to the invoices. The attachments including chalans, or any other documents will be available only with the original invoices. In case of lost invoices and duplicates, supporting documents will not be furnished again.</textarea>
+                </p>
             </div>
-            <br>
-            <center>
-                <a href="praposal10.html"><button class="modal-trigger nextbtn" type="button">Next</button></a>
-            </center>
         </div>
-
-
-        <!-- </form> -->
-
-
-        </form>
-        <a href="https://bdeliver.net/bdelivernew/home" style="margin-right: 80px;" class="logout">Home</a>
-        <!-- <a href="https://bdeliver.net/bdelivernew/changePassword" style="margin-right: 150px;" class="logout">Change Password</a> -->
-        <a class="logout" href="https://bdeliver.net/bdelivernew/logout"
-            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-            Logout
-        </a>
-        <form id="logout-form" action="https://bdeliver.net/bdelivernew/logout" method="POST" style="display: none;">
-            <input type="hidden" name="_token" value="YvS5KbW3hc4LmQ0HVzvgp9RaMMNnnOuFxLUk2TdA">
-        </form>
-
     </div>
-
-
+    <center>
+        <a href="praposal9.html"><button class="modal-trigger nextbtn" type="button">Next</button></a>
+    </center>
     <br>
     <!--Import jQuery before materialize.js-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://bdeliver.net/bdelivernew/css/materialize.css" />
+    <link type="text/css" rel="stylesheet" href="https://bdeliver.net/bdelivernew/css/docTransfer.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/sweetalert2/6.4.1/sweetalert2.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
+    <!-- <link href="https://bdeliver.net/bdelivernew/css/jquery.uploadPreviewer.css" rel="stylesheet" /> -->
+    <link href="https://bdeliver.net/bdelivernew/css/materialnote.css" rel="stylesheet" type="text/css">
+    <script src="https://bdeliver.net/bdelivernew/js/materialnote.js"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proposal</title>
+    <style type="text/css">
+        #errmsg {
+            color: red
+        }
+
+        .headingOne input.cust-heading {
+            font-size: 3rem !important
+        }
+
+        .mt-0 {
+            margin-top: 0 !important
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0
+        }
+
+        .logout {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #2a517478;
+            text-transform: uppercase;
+            font-weight: 300;
+            cursor: pointer;
+            letter-spacing: .7px;
+            z-index: 10;
+        }
+
+        .headingTwo {
+            font-size: 50px;
+            position: absolute;
+            top: 15px;
+            line-height: 26px;
+            left: 140px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #2a517478;
+        }
+
+        .headingOne input.cust-heading {
+            font-size: 3rem !important;
+
+        }
+
+        .nextbtn {
+            background: #102a42;
+            padding: 6px 33px;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 auto !important;
+            text-align: center;
+            border: none;
+            float: right;
+        }
+
+        center {
+            margin: 20px 0;
+        }
+
+        .headingOne input.cust-heading {
+
+            font-size: 3rem !important;
+
+            font-weight: 700 !important;
+
+            color: #2a517478;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12" style="margin-bottom: 20px;">
+            <div class="">
+                <h1 class="headingOne">
+                    <!-- 02. <span class="headingTwo">Scope of Work <br><span class="headingThree">What you want the agency to do for you?</span></span> -->
+                    <input name="second_heading" id="second_heading" value="2. Scope of Work" type="text"
+                        class="validate cust-heading">
+                    <input name="second_head_text" id="second_head_text" value="What you want the agency to do for you?"
+                        type="text" class="validate">
+                </h1>
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th>Scope areas</th>
+                            <th>Applicable</th>
+                            <th><a onclick="setCurrency()">Fee <input name="currency" id="currency" value="" type="text"
+                                        style="display:none;" hidden></a></th>
+                            <th>Details, if any (Define numbers during the engagement period)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- <td><span class="fontWeight900">1.<br> A. Campaign Theme Ideation & Planning</span></td> -->
+                            <td>
+                                <span class="fontWeight900">
+                                    <!-- 1.<br> -->
+                                    <div class="input-field">
+                                        <input name="theme_label" id="last_name"
+                                            value="Campaign Theme Ideation & Planning" type="text" class="validate">
+                                    </div>
+                                </span>
+                            </td>
+                            <td>
+                                <!-- <form action="#"> -->
+                                <p>
+                                    <input name="camp_theam" type="radio" value="Yes" id="test1" />
+                                    <label for="test1">Yes</label>
+                                </p>
+                                <p>
+                                    <input name="camp_theam" type="radio" value="No" id="test2" />
+                                    <label for="test2">No</label>
+                                </p>
+                                <!-- </form> -->
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="camp_theam_fee" id="camp_theam_fee" type="number" min="0"
+                                        oninput="calc();" class="validate">
+                                    <label for="last_name" id="text_currency"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="camp_theam_details" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- <tr>
+         <td>
+         	<span style="font-weight: 900;">B. Campaign Program Design</span>
+         	<br>Design campaign calendar 
+         	<br>Design the media mix </td>
+         <td> -->
+                        <tr>
+                            <td>
+                                <span style="font-weight: 900;"><input name="program_label" id="last_name"
+                                        value="Campaign Program Design" type="text" class="validate"></span>
+                                <br><input name="pragram_br1_label" id="pragram_br1_label"
+                                    value="Design campaign calendar" type="text" class="validate">
+                                <br><input name="pragram_br2_label" id="last_name" value="Design the media mix"
+                                    type="text" class="validate"></td>
+                            <td>
+                                <!-- <form action="#"> -->
+                                <p>
+                                    <input name="camp_prog_design" type="radio" value="Yes" id="test3" />
+                                    <label for="test3">Yes</label>
+                                </p>
+                                <p>
+                                    <input name="camp_prog_design" type="radio" value="No" id="test4" />
+                                    <label for="test4">No</label>
+                                </p>
+                                <!-- </form> -->
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="camp_prog_fee" id="camp_prog_fee" type="number" oninput="calc();"
+                                        class="validate">
+                                    <label for="last_name" id="text_currency"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="camp_prog_details" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- <tr>
+         <td>
+         <span style="font-weight: 900;">C. Collateral ideation</span>
+         <br>Planning and ideation of collateral across media</td>
+         <td> -->
+                        <tr>
+                            <td>
+                                <span style="font-weight: 900;"><input name="collateral_label" id="last_name"
+                                        value="Collateral Ideation" type="text" class="validate"></span>
+                                <br><input name="collateral_br_label" id="last_name"
+                                    value="Planning and ideation of collateral across media" type="text"
+                                    class="validate"></td>
+                            <td>
+                                <!-- <form action="#"> -->
+                                <p>
+                                    <input name="collateral" type="radio" value="Yes" id="test5" />
+                                    <label for="test5">Yes</label>
+                                </p>
+                                <p>
+                                    <input name="collateral" type="radio" value="No" id="test6" />
+                                    <label for="test6">No</label>
+                                </p>
+                                <!-- </form> -->
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="collateral_fee" id="collateral_fee" type="number" oninput="calc();"
+                                        min="0" class="validate">
+                                    <label for="last_name" id="text_currency"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="collateral_details" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- <tr>
+         <td>
+         <span style="font-weight: 900;">2. Patient/ Consumer Initiatives</span>
+         <br>Planning, branding and escalation of patient initiatives across multiple channels </td>
+         <td> -->
+                        <tr>
+                            <td>
+                                <span style="font-weight: 900;"><input name="patient_label" id="last_name"
+                                        value="Patient/ Consumer Initiatives" type="text" class="validate"></span>
+                                <br><input name="patient_br_label" id="last_name"
+                                    value="Planning, branding and escalation of patient initiatives across multiple channels"
+                                    type="text" class="validate"> </td>
+                            <td>
+                                <!-- <form action="#"> -->
+                                <p>
+                                    <input name="Initiatives" type="radio" value="Yes" id="test7" />
+                                    <label for="test7">Yes</label>
+                                </p>
+                                <p>
+                                    <input name="Initiatives" type="radio" value="No" id="test8" />
+                                    <label for="test8">No</label>
+                                </p>
+                                <!-- </form> -->
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="Initiatives_fee" id="Initiatives_fee" oninput="calc();" type="number"
+                                        min="0" type="text" class="validate">
+                                    <label for="last_name" id="text_currency"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="Initiatives_details" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <td>
+         <span style="font-weight: 900;">3. Internal customer engagement</span>
+         <br>Corporate, field campaign ideation and planning</td>
+         <td> -->
+                            <td>
+                                <span style="font-weight: 900;"><input name="internal_label" id="last_name"
+                                        value="Internal customer engagement" type="text" class="validate"></span>
+                                <br><input name="internal_br_label" id="last_name"
+                                    value="Corporate, field campaign ideation and planning" type="text"
+                                    class="validate"></td>
+                            <td>
+                                <!-- <form action="#"> -->
+                                <p>
+                                    <input name="engagement" type="radio" value="Yes" id="test9" />
+                                    <label for="test9">Yes</label>
+                                </p>
+                                <p>
+                                    <input name="engagement" type="radio" value="No" id="test10" />
+                                    <label for="test10">No</label>
+                                </p>
+                                <!-- </form> -->
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="engagement_fee" id="engagement_fee" type="number" oninput="calc();"
+                                        min="0" class="validate">
+                                    <label for="last_name" id="text_currency"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="engagement_details" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <td>
+         <span style="font-weight: 900;">4. Digital Campaigns</span>
+         </td> -->
+                            <td>
+                                <span style="font-weight: 900;"><input name="digital_label" id="last_name"
+                                        value="Digital Campaigns" type="text" class="validate"></span>
+                            </td>
+                            <td>
+                                <!-- <form action="#"> -->
+                                <p>
+                                    <input name="dcampaigns" type="radio" value="Yes" id="test11" />
+                                    <label for="test11">Yes</label>
+                                </p>
+                                <p>
+                                    <input name="dcampaigns" type="radio" value="No" id="test12" />
+                                    <label for="test12">No</label>
+                                </p>
+                                <!-- </form> -->
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="dcampaigns_fee" id="dcampaigns_fee" type="number" oninput="calc();"
+                                        min="0" class="validate">
+                                    <label for="last_name" id="text_currency"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="dcampaigns_details" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <td><span style="font-weight: 900;">5. Films</span></td> -->
+                            <td>
+                                <span style="font-weight: 900;"><input name="films_label" id="last_name" value="Films"
+                                        type="text" class="validate"></span>
+                            </td>
+                            <td>
+                                <!-- <form action="#"> -->
+                                <p>
+                                    <input name="films" type="radio" value="Yes" id="test13" />
+                                    <label for="test13">Yes</label>
+                                </p>
+                                <p>
+                                    <input name="films" type="radio" value="No" id="test14" />
+                                    <label for="test14">No</label>
+                                </p>
+                                <!-- </form> -->
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="films_fee" id="films_fee" oninput="calc();" type="number" min="0"
+                                        class="validate">
+                                    <label for="last_name" id="text_currency"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="films_details" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <td><span style="font-weight: 900;">6. Medical Initiatives</span></td> -->
+                            <td>
+                                <span style="font-weight: 900;"><input name="medical_ini_label" id="last_name"
+                                        value="Medical Initiatives" type="text" class="validate"></span>
+                            </td>
+                            <td>
+                                <!-- <form action="#"> -->
+                                <p>
+                                    <input name="medinitiatives" type="radio" value="Yes" id="test15" />
+                                    <label for="test15">Yes</label>
+                                </p>
+                                <p>
+                                    <input name="medinitiatives" type="radio" value="No" id="test16" />
+                                    <label for="test16">No</label>
+                                </p>
+                                <!-- </form> -->
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="medinitiatives_fee" id="medinitiatives_fee" type="number" min="0"
+                                        oninput="calc();" class="validate">
+                                    <label for="last_name" id="text_currency"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="medinitiatives_details" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span style="font-weight: 900;"><input name="medical_label" id="last_name"
+                                        value="Medical Animations" type="text" class="validate"></span>
+                                <!-- <span style="font-weight: 900;">7. Medical animations </span> -->
+                            </td>
+                            <td>
+                                <!-- <form action="#"> -->
+                                <p>
+                                    <input name="medianimations" type="radio" value="Yes" id="test17" />
+                                    <label for="test17">Yes</label>
+                                </p>
+                                <p>
+                                    <input name="medianimations" type="radio" value="No" id="test18" />
+                                    <label for="test18">No</label>
+                                </p>
+                                <!-- </form> -->
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="medianimations_fee" oninput="calc();" id="medianimations_fee"
+                                        type="number" min="0" class="validate">
+                                    <label for="last_name" id="text_currency"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="medianimations_details" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-weight: 900;"><input name="cme_label" id="last_name"
+                                        value="CME Content" type="text" class="validate"></span></td>
+                            <td>
+                                <!-- <form action="#"> -->
+                                <p>
+                                    <input name="cmecontent" type="radio" value="Yes" id="test19" />
+                                    <label for="test19">Yes</label>
+                                </p>
+                                <p>
+                                    <input name="cmecontent" type="radio" value="No" id="test20" />
+                                    <label for="test20">No</label>
+                                </p>
+                                <!-- </form> -->
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="cmecontent_fee" id="cmecontent_fee" type="number" oninput="calc();"
+                                        min="0" class="validate">
+                                    <label for="last_name" id="text_currency"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="cmecontent_details" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-weight: 900;"><input name="research_label" id="last_name"
+                                        value="Market Research" type="text" class="validate"></span></td>
+                            <td>
+                                <!-- <form action="#"> -->
+                                <p>
+                                    <input name="market_research" type="radio" value="Yes" id="test21" />
+                                    <label for="test21">Yes</label>
+                                </p>
+                                <p>
+                                    <input name="market_research" type="radio" value="No" id="test22" />
+                                    <label for="test22">No</label>
+                                </p>
+                                <!-- </form> -->
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="market_research_fee" id="market_research_fee" oninput="calc();"
+                                        type="number" min="0" class="validate">
+                                    <label for="last_name" id="text_currency"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="market_research_details" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-weight: 900;"><input name="artwork_label" id="last_name"
+                                        value="Artworks and Digital Inputs" type="text" class="validate"></span></td>
+                            <td>
+                                <!-- <form action="#"> -->
+                                <p>
+                                    <input name="inputs" type="radio" value="Yes" id="test23" />
+                                    <label for="test23">Yes</label>
+                                </p>
+                                <p>
+                                    <input name="inputs" type="radio" value="No" id="test24" />
+                                    <label for="test24">No</label>
+                                </p>
+                                <!-- </form> -->
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="inputs_fee" oninput="calc();" id="inputs_fee" type="number" min="0"
+                                        class="validate">
+                                    <label for="last_name" id="text_currency"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="inputs_details" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-weight: 900;">Total</span></td>
+                            <td>
+                                <!-- <form action="#"> -->
+                                <input name="total" type="hidden" value="Yes" id="test25" />
+
+                                <!--  <p>
+      <input name="total" type="radio" value="Yes" id="test25"   />
+      <label for="test25">Yes</label>
+      </p>
+      <p>
+      <input name="total" type="radio" value="No" id="test26"  />
+      <label for="test26">No</label>
+      </p> -->
+                                <!-- </form> -->
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <input name="total_fee" id="total_fee" type="number" min="0" class="validate">
+                                    <label for="last_name" id="text_currency"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-field">
+                                    <!--   <input name="total_details" id="last_name" type="text"  class="validate"> -->
+                                    <!-- <label for="last_name">Type/write here</label> -->
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+
+
+                <h3 class="headingSix"><input name="additional_service" value="ADDITIONAL" id="additional_service"
+                        type="text" class="validate"></h3>
+                <table class="striped">
+                    <tbody>
+
+                        <tr>
+                            <td><span class="fontWeight900"><input name="additional_taxation" id="additional_taxation"
+                                        value="Taxation" type="text" class="validate"></span></td>
+                            <td>
+                                <div class="input-field mt-0">
+                                    <input name="project_taxvalue" style="width:88%" id="project_taxvalue" type="number"
+                                        min="0" class="validate"> <span>%</span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="fontWeight900"><input name="project_duration" id="project_duration"
+                                        value="Project Duration" type="text" class="validate"></span></td>
+                            <td>
+                                <div class="input-field mt-0">
+                                    <input name="duration_value" id="duration_value" style="width:88%" i type="number"
+                                        min="0" class="validate"><span>Days</span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="fontWeight900"><input name="billing_milestone" id="billing_milestone"
+                                        value="Billing Milestone" type="text" class="validate"></span></td>
+                            <!-- <td><span class="fontWeight900">Digital Lead</span></td> -->
+                            <td>
+                                <div class="input-field mt-0">
+                                    <input name="billing_milestone_text" id="billing_milestone_text" type="text"
+                                        class="validate">
+                                    <label for="last_name"></label>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="fontWeight900"><input name="payment_terms" id="payment_terms"
+                                        value="Payment Terms" type="text" class="validate"></span></td>
+                            <!-- <td><span class="fontWeight900">Medical Lead</span></td> -->
+                            <td>
+                                <div class="input-field mt-0">
+                                    <input name="payment_terms_text" id="payment_terms_text" type="text"
+                                        class="validate">
+                                    <label for="last_name"></label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <center>
+                <a href="praposal5.html"><button class="modal-trigger nextbtn" type="button">Next</button></a>
+            </center>
+
+        </div>
+    </div>
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/sweetalert2/6.4.1/sweetalert2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#four_a_text").keypress(function (e) {
+                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                    $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                    return false;
+                }
+            });
+        });
+    </script>
+    <script>
+        function calc() {
+            var camp_theam_fee = document.getElementById("camp_theam_fee").value;
+            var camp_theam_fee = +camp_theam_fee;
+            var camp_prog_fee = document.getElementById("camp_prog_fee").value;
+            var camp_prog_fee = +camp_prog_fee;
+            var collateral_fee = document.getElementById("collateral_fee").value;
+            var collateral_fee = +collateral_fee;
+            var Initiatives_fee = document.getElementById("Initiatives_fee").value;
+            var Initiatives_fee = +Initiatives_fee;
+            var engagement_fee = document.getElementById("engagement_fee").value;
+            var engagement_fee = +engagement_fee;
+            var dcampaigns_fee = document.getElementById("dcampaigns_fee").value;
+            var dcampaigns_fee = +dcampaigns_fee;
+            var films_fee = document.getElementById("films_fee").value;
+            var films_fee = +films_fee;
+            var medinitiatives_fee = document.getElementById("medinitiatives_fee").value;
+            var medinitiatives_fee = +medinitiatives_fee;
+            var medianimations_fee = document.getElementById("medianimations_fee").value;
+            var medianimations_fee = +medianimations_fee;
+            var cmecontent_fee = document.getElementById("cmecontent_fee").value;
+            var cmecontent_fee = +cmecontent_fee;
+            var market_research_fee = document.getElementById("market_research_fee").value;
+            var market_research_fee = +market_research_fee;
+            var inputs_fee = document.getElementById("inputs_fee").value;
+            var inputs_fee = +inputs_fee;
+            var total = camp_theam_fee + camp_prog_fee + collateral_fee + Initiatives_fee + engagement_fee +
+                dcampaigns_fee + films_fee + medinitiatives_fee + medianimations_fee + cmecontent_fee +
+                market_research_fee + inputs_fee;
+            document.getElementById("total_fee").value = total;
+        }
+    </script>
+    <script>
+        function submitBtn() {
+            var name = $("#name").val();
+            var client = $("#client").val();
+            var proposal_by = $("#proposal_by").val();
+            var proposal_validity = $("#proposal_validity").val();
+            var email = $("#email").val();
+            var pro_project_lead = $("#pro_project_lead").val();
+            var pro_client_servicing = $("#pro_client_servicing").val();
+            var pro_creative_director = $("#pro_creative_director").val();
+            var pro_medical_lead = $("#pro_medical_lead").val();
+            var doc_id = $("#doc_id").val();
+            if (name == "" || client == "" || proposal_by == "" || proposal_validity == "" || email == "") {
+                swal({
+                    text: "Please Check If Name , Client , Proposal By , Proposal Validity  or Email Field is Empty."
+                });
+            } else if (pro_project_lead == "" || pro_client_servicing == "" || pro_creative_director == "" ||
+                pro_medical_lead == "") {
+                swal({
+                    text: "Please Check If Project Lead , Client Servicing , Creative or Medical Lead is Empty."
+                });
+            } else if (doc_id != "") {
+                swal({
+                    text: "Thank you, for submitting Proposal. We will get back to you shortly."
+                }).then((value) => {
+                    $("#form1").submit();
+                });
+            } else {
+                swal({
+                    text: "Your link has been shared successfully to " + name + "."
+                }).then((value) => {
+                    $("#form1").submit();
+                });
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function setCurrency() {
+            swal({
+                input: 'select',
+                inputOptions: {
+                    'USD': 'Dollar',
+                    'INR': 'Indian Rupee',
+                    'SGD': 'Singapore Dollar',
+                }
+            }).then((result) => {
+                $("#currency").val(result);
+                $("label[id='text_currency']").text(result);
+            });
+        }
+    </script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+
+</html>

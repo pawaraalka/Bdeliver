@@ -7,19 +7,25 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="https://bdeliver.net/bdelivernew/css/materialize.css" />
     <link type="text/css" rel="stylesheet" href="https://bdeliver.net/bdelivernew/css/docTransfer.css" />
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link href="https://cdn.jsdelivr.net/sweetalert2/6.4.1/sweetalert2.css" rel="stylesheet" />
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
     <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
+
     <!-- <link href="https://bdeliver.net/bdelivernew/css/jquery.uploadPreviewer.css" rel="stylesheet" /> -->
     <link href="https://bdeliver.net/bdelivernew/css/materialnote.css" rel="stylesheet" type="text/css">
     <script src="https://bdeliver.net/bdelivernew/js/materialnote.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
     <script>
         $(document).ready(function () {
             $('#materialnote').materialnote({
-                height: 200
+                height: 300
             });
             $('#summernote').summernote({
                 toolbar: [
@@ -35,14 +41,24 @@
     </script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proposal</title>
-    <style type="text/css">
-        #errmsg {
-            color: red
-        }
-
+    <title>Docintosh Proposal</title>
+    <style>
         .headingOne input.cust-heading {
             font-size: 3rem !important
+        }
+
+        .footer {
+            background-color: #e0e0e0 !important
+        }
+
+        .footerHeading,
+        .footer ul li,
+        .copyright {
+            color: #1a1a1a !important
+        }
+
+        .footer ul li {
+            color: #081c38 !important
         }
 
         .mt-0 {
@@ -55,244 +71,567 @@
             margin: 0
         }
 
-        .logout {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: #2a517478;
-            text-transform: uppercase;
-            font-weight: 300;
-            cursor: pointer;
-            letter-spacing: .7px;
-            z-index: 10;
+        .header {
+            background: #102a42;
+            height: 260px;
         }
 
-        .headingTwo {
-            font-size: 50px;
-            position: absolute;
-            top: 15px;
-            line-height: 26px;
-            left: 140px;
+        .home_slider_content h1:first-child {
+            font-size: 90px;
+            font-weight: 900;
+            color: #FFFFFF;
             text-transform: uppercase;
-            font-weight: 700;
-            color: #2a517478;
+            margin: 0;
+        }
+
+        .home_slider_content h1:nth-child(2) {
+            font-family: 'Beyond';
+            font-size: 74px;
+            color: #ed1846;
+            margin-top: -40px;
+        }
+
+        .home_slider_content {
+            position: absolute;
+            top: 130px;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            z-index: 11;
+        }
+
+        @font-face {
+            font-family: Beyond;
+            src: url(./font/beyond-the-mountains/beyond_the_mountains.otf);
+            src: url(./font/beyond-the-mountains/beyond_the_mountains.ttf);
+        }
+
+        .nextbtn {
+            background: #102a42;
+            padding: 6px 33px;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+
+            border: none;
+
+            float: right;
+            /* margin-right: 120px; */
+        }
+
+        .input-field {
+            position: relative;
+            margin-top: 0rem;
+        }
+
+        .home_slider_content h1 {
+            margin-bottom: -15px;
+            text-align: center;
+        }
+
+        .clientData {
+            margin-top: -10px;
         }
     </style>
 </head>
 
+
 <body>
 
-    <div class="row">
-        <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
-            <div class="slides">
-                <h1 class="headingOne">
-                    <!-- 07. <span class="headingTwo">APPROVALS</span> -->
-                    <input name="seven_heading" id="seven_heading" value="7. Approvals" type="text"
-                        class="validate cust-heading">
-                </h1>
-                <p class="paragraph">
-                    <textarea class="materialize-textarea" name="seven_text" id="seven_text"
-                        type="text">Work In Progress will be shared at appropriate time intervals. Timely approvals will help deliver the project in estimated time.</textarea>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="clearfix"></div>
-    <div class-"divider" style="height: 10px; background-color: #e0e0e0; margin:120px 10px 60px;"></div>
-    <div class="row">
-        <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
-            <div class="slides">
-                <h1 class="headingOne">
-                    <!-- 08. 
-         <span class="headingTwo">
-         RELEASE FORMAT
-         </span> -->
-                    <input name="eight_heading" id="eight_heading" value="8. Release Format" type="text"
-                        class="validate input-cust-heading">
-                </h1>
-                <p class="paragraph">
-                    <!-- All print artworks will be released in CQ Adobe Illustrator (.AI files) or high resolution pdf. All digital inputs will be released as specified by the client. All Work In Progress Files will be shared as jpegs and pdfs.  -->
-                    <textarea class="materialize-textarea" name="eight_text" id="eight_text"
-                        type="text">All print artworks will be released in CQ Adobe Illustrator (.AI files) or high resolution pdf. All digital inputs will be released as specified by the client. All Work In Progress Files will be shared as jpegs and pdfs.</textarea>
-                    <span class="fontWeight900">
-                        <!-- Kindly note: All final artworks will be released through our file transfer portal - bdeliver. Unique username, and password will be shared with the client team for their account. You can access your account for downloading released files. -->
-                        <textarea class="materialize-textarea" name="eight_note" id="eight_note"
-                            type="text">Kindly note: All final artworks will be released through our file transfer portal - bdeliver. Unique username, and password will be shared with the client team for their account. You can access your account for downloading released files.</textarea>
-                    </span>
-                </p>
-                <div class="col xxxl6 xxl6 xl6 l6 m12 s12">
-                    <p>For Brandcare</p>
-                    <div class="input-field col m4 s12">
-                        <input name="bc_name" id="bc_name" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Name</label>
-                    </div>
-                    <div class="input-field col m4 s12">
-                        <input name="bc_designate" id="bc_designate" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Designation</label>
-                    </div>
-                    <!--<div class="input-field col m3 s12">
-         <input name="bc_signature"   id="bc_signature" type="text" class="validate">
-         <label for="first_name" class="clientDetails2">Signature</label>
-         </div>-->
-                    <div class="input-field col m4 s12">
-                        <input name="bc_date" id="bc_date" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Date</label>
-                    </div>
-                </div>
-                <div class="col xxxl6 xxl6 xl6 l6 m12 s12">
-                    <p>For Client</p>
-                    <div class="input-field col m4 s12">
-                        <input name="cc_name" id="cc_name" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Name</label>
-                    </div>
-                    <div class="input-field col m4 s12">
-                        <input name="cc_designate" id="cc_designate" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Designation</label>
-                    </div>
-                    <!-- <div class="input-field col m3 s12">
-         <input name="cc_signature"   id="cc_signature" type="text" class="validate">
-         <label for="first_name" class="clientDetails2">Signature</label>
-         </div> -->
-                    <div class="input-field col m4 s12">
-                        <input name="cc_date" id="cc_date" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Date</label>
-                    </div>
-                    </dvi>
-                </div>
-            </div>
-        </div><br><br><br><br><br><br>
-        <div class="clearfix"></div>
-        <!-- </form> -->
-        <center>
-            <button class="modal-trigger submitBtn" onclick="submitBtn()" type="button">Send</button>
-        </center>
-        <div class="footer">
-            <div class="row">
-                <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
-                    <div class="col l3 s12">
-                        <img src="https://bdeliver.net/bdelivernew/images/Brandcare-logo.png"
-                            class="responsive-img logo" alt="logo" data-pagespeed-url-hash="1229339762"
-                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
-                    </div>
-                    <!-- <div class="col l2 s12">
-         <h5 class="left-align footerHeading">Address</h5>
-         <ul>
-         	<li>405, Sunrise Business Park, Plot No. B-68, Road No. 16, MIDC, Wagle Estate, Thane W - 400604. </li>
-         </ul>
-         </div> -->
-                    <div class="col l2 s12">
-                        <h5 class="left-align footerHeading">Project Lead</h5>
-                        <ul>
-                            <li>
-                                <div class="input-field">
-                                    <input id="pro_project_lead" placeholder="TYPE HERE" name="pro_project_lead"
-                                        type="text" class="validate" required>
-                                    <!-- <label for="pro_project_lead" class="inputText">type here</label> -->
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l2 s12">
-                        <h5 class="left-align footerHeading">Client Servicing</h5>
-                        <ul>
-                            <li>
-                                <div class="input-field">
-                                    <input id="pro_client_servicing" placeholder="TYPE HERE" type="text"
-                                        name="pro_client_servicing" class="validate" required>
-                                    <!-- <label for="pro_client_servicing" class="inputText">type here</label> -->
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l2 s12">
-                        <h5 class="left-align footerHeading">Creative</h5>
-                        <ul>
-                            <li>
-                                <div class="input-field">
-                                    <input id="pro_creative_director" placeholder="TYPE HERE" type="text"
-                                        name="pro_creative_director" class="validate" required>
-                                    <!-- <label for="pro_creative_director" class="inputText">type here</label> -->
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l2 s12">
-                        <h5 class="left-align footerHeading">Medical Lead</h5>
-                        <ul>
-                            <li>
-                                <div class="input-field">
-                                    <input id="pro_medical_lead" type="text" placeholder="TYPE HERE"
-                                        name="pro_medical_lead" class="validate" required>
-                                    <!-- <label for="pro_medical_lead" class="inputText">type here</label> -->
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container copyright">© 2023 Brandcare Medical Advertising & Consultancy Pvt. Ltd. All Rights
-                    Reserved.
-                </div>
-            </div>
-        </div>
-        </form>
-        <a href="https://bdeliver.net/bdelivernew/home" style="margin-right: 80px;" class="logout">Home</a>
-        <!-- <a href="https://bdeliver.net/bdelivernew/changePassword" style="margin-right: 150px;" class="logout">Change Password</a> -->
-        <a class="logout" href="https://bdeliver.net/bdelivernew/logout"
-            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-            Logout
-        </a>
-        <form id="logout-form" action="https://bdeliver.net/bdelivernew/logout" method="POST" style="display: none;">
-            <input type="hidden" name="_token" value="YvS5KbW3hc4LmQ0HVzvgp9RaMMNnnOuFxLUk2TdA">
-        </form>
+    <div id="container">
 
+
+        <div class="row clientData">
+            <form id="form1" method="POST" action="https://bdeliver.net/bdelivernew/docintoshproposal">
+                <input type="hidden" name="_token" value="VKMf4GyJM8X277v9oxfXO8b5rqV8NQ04AHKqMj0o">
+
+
+                <!--</div> -->
+
+
+
+
+                <div class="clearfix"></div>
+                <div class="division"></div>
+
+                <div class="row">
+                    <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
+                        <div class="slides" style="position: relative;">
+                            <h1 class="headingOne">
+                                <!-- 03. <span class="headingTwo">Project Team  <br><span class="headingThree">Brandcare Team</span></span> -->
+                                <input name="three_heading" id="three_heading" value="3. Project Team" type="text"
+                                    class="validate cust-heading">
+                                <input name="three_head_text" id="three_head_text" value="Brandcare Team" type="text"
+                                    class="validate ">
+                            </h1>
+
+                            <table class="striped">
+                                <tbody>
+                                    <tr>
+                                        <td><span class="fontWeight900"><input name="project_adviser_text"
+                                                    id="project_adviser_text" value="Project Adviser" type="text"
+                                                    class="validate"></span></td>
+                                        <td>
+                                            <div class="input-field mt-0">
+                                                <input name="project_adviser" id="project_adviser" type="text"
+                                                    class="validate">
+                                                <label for="last_name">Type/write here</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span class="fontWeight900"><input name="project_lead_text"
+                                                    id="project_lead_text" value="Project Lead" type="text"
+                                                    class="validate"></span></td>
+                                        <td>
+                                            <div class="input-field mt-0">
+                                                <input name="project_lead" id="project_lead" type="text"
+                                                    class="validate">
+                                                <label for="= 0">Type/write here</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span class="fontWeight900"><input name="digital_lead_text"
+                                                    id="digital_lead_text" value="Digital Lead" type="text"
+                                                    class="validate"></span></td>
+                                        <!-- <td><span class="fontWeight900">Digital Lead</span></td> -->
+                                        <td>
+                                            <div class="input-field mt-0">
+                                                <input name="digital_lead" id="digital_lead" type="text"
+                                                    class="validate">
+                                                <label for="last_name">Type/write here</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span class="fontWeight900"><input name="medical_lead_text"
+                                                    id="medical_lead_text" value="Medical Lead" type="text"
+                                                    class="validate"></span></td>
+                                        <td>
+                                            <div class="input-field mt-0">
+                                                <input name="medical_lead" id="medical_lead" type="text"
+                                                    class="validate">
+                                                <label for="last_name">Type/write here</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span class="fontWeight900"><input name="servicing_text" id="servicing_text"
+                                                    value="Client servicing" type="text" class="validate"></span></td>
+                                        <!-- <td><span class="fontWeight900">Client servicing </span></td> -->
+                                        <td>
+                                            <div class="input-field mt-0">
+                                                <input name="client_servicing" id="client_servicing" type="text"
+                                                    class="validate">
+                                                <label for="last_name">Type/write here</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span class="fontWeight900"><input name="creative_lead_text"
+                                                    id="creative_lead_text" value="Creative Lead" type="text"
+                                                    class="validate"></span></td>
+                                        <!-- <td><span class="fontWeight900">Creative Lead </span></td> -->
+                                        <td>
+                                            <div class="input-field mt-0">
+                                                <input name="creative_lead" id="creative_lead" type="text"
+                                                    class="validate">
+                                                <label for="last_name">Type/write here</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span class="fontWeight900"><input name="accounts_admin_text"
+                                                    id="accounts_admin_text" value="Admin & Accounts" type="text"
+                                                    class="validate"></span></td>
+                                        <!-- <td><span class="fontWeight900">Admin & Accounts </span></td> -->
+                                        <td>
+                                            <div class="input-field mt-0">
+                                                <input name="admin_ac" id="admin_ac" type="text" class="validate">
+                                                <label for="last_name">Type/write here</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="division"></div>
+
+                <div class="row">
+                    <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
+                        <div class="slides">
+                            <h1 class="headingOne">
+                                <!-- 04. <span class="headingTwo">Financial terms and conditions  
+							<br><span class="headingThree"></span>
+							</span> -->
+                                <input name="four_heading" id="four_heading" value="4. Financial terms and conditions"
+                                    type="text" class="validate cust-heading">
+                            </h1>
+                            <h3 class="headingSix"><input name="four_a" value="a. Taxation" id="four_a" type="text"
+                                    class="validate"></h3>
+                            <p class="paragraph"> <textarea class="materialize-textarea" name="four_a_text"
+                                    id="four_a_text"
+                                    type="text">GST  as applicable at the time of the project will be levied over and above the quoted costs and is subject to change as per government regulations.</textarea>
+                            </p>
+                            <div class="division2"></div>
+                            <h3 class="headingSix"><input name="four_b" value="b. Payment Terms" id="four_b" type="text"
+                                    class="validate"></h3>
+                            <p class="paragraph"> <textarea class="materialize-textarea" name="four_b_text"
+                                    id="four_b_text"
+                                    type="text">The above costs are on the basis of a 30 day credit period. All retainer brands will be billed at the start of each month. A 30 day credit period for payments is provided. Delays will be charged additional interest of 1% of the invoice amount per month.</textarea>
+                            </p>
+                            <div class="division2"></div>
+
+
+                            <h3 class="headingSix"><input name="four_c" value="c. Cancellation Fee" id="four_c"
+                                    type="text" class="validate"></h3>
+                            <p class="paragraph"> <textarea class="materialize-textarea" name="four_c_text"
+                                    id="four_c_text"
+                                    type="text">In case of cancelling of the project after theme concept approvals and work commencement, 100% of the ideation charges will be applicable.</textarea>
+                            </p>
+                            <div class="division2"></div>
+
+
+
+                            <h3 class="headingSix"><input name="four_d" value="d. Content, Creative  and Imagery"
+                                    id="four_d" type="text" class="validate"></h3>
+                            <p class="paragraph">
+                                <textarea class="materialize-textarea" name="four_d_one" id="four_d_one"
+                                    type="text">i. Ownership of content - Till such time fully paid for the content and creative will remain an intellectual property of Brandcare.</textarea>
+                                <textarea class="materialize-textarea" name="four_d_two" id="four_d_two"
+                                    type="text">ii.  Image copyrights - For the images purchased from the images library, ownership is on the client to use it based on the terms and conditions specified by the image library.  Brandcare bears no responsibility towards the usage of the imagery by the client at any later point in time.</textarea>
+                                <textarea class="materialize-textarea" name="four_d_three" id="four_d_three"
+                                    type="text">iii. Storage and back ups - Only when hired on a retainer basis for a period of 12 months and more, Brandcare will be responsible for storage and back ups of artworks. Artwork holding and retrieval facilities will be available for artworks delivered in the past 15 months only unless special holding and storage facilities have been availed.</textarea>
+                                <div class="division2"></div>
+
+                                <h3 class="headingSix"><input name="four_e" value="e. Billing Milestone" id="four_e"
+                                        type="text" class="validate"></h3>
+                                <p class="paragraph"><textarea class="materialize-textarea" name="four_e_text"
+                                        id="four_e_text"
+                                        type="text">In case of cancelling of the project after theme concept approvals and work commencement, 100% of the ideation charges will be applicable.</textarea>
+                                </p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="division"></div>
+
+                <div class="row">
+                    <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
+                        <div class="slides">
+                            <h1 class="headingOne">
+                                <!-- 05. <span class="headingTwo">
+						
+								APPROVALS,  AUTHORITY<br>
+										<span class="headingThree">
+											AND COORDINATION
+										</span>
+								</span> -->
+                                <input name="five_heading" id="five_heading" value="5. Approvals, Authority" type="text"
+                                    class="validate cust-heading">
+                                <input name="five_head_text" id="five_head_text" value="AND COORDINATION" type="text"
+                                    class="validate">
+                            </h1>
+
+                            <p class="paragraph">
+
+                                <textarea class="materialize-textarea" name="five_text" id="five_text"
+                                    type="text">Appropriate briefs to the agency will improve outcomes. At the time of the brief and first agency concept presentation, the presence of the entire branding team from the client side will be appreciated to get clarity on directives and minimize corrective iterations. Timely approvals will help deliver the project within stipulated timelines and minimize the burden of extra holding charges to the client.</textarea>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="division"></div>
+
+                <div class="row">
+                    <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
+                        <div class="slides">
+                            <h1 class="headingOne">
+                                <!-- 06. <span class="headingTwo">DOCUMENTATION  <br><span class="headingThree"></span></span> -->
+                                <input name="six_heading" id="six_heading" value="6. Documentation" type="text"
+                                    class="validate cust-heading">
+                            </h1>
+
+                            <h3 class="headingSix">
+                                <!-- For Brandcare -->
+                                <input name="for_brandcare" id="for_brandcare" value="For Brandcare" type="text"
+                                    class="validate">
+                            </h3>
+                            <p class="paragraph">
+
+                                <textarea class="materialize-textarea" name="six_text_brandcare" id="six_text"
+                                    type="text">A document in the order of a contract or purchase order and an agreement with this document as addendum signed by relevant authorities from the client and agency at the beginning of the project is highly appreciated.</textarea>
+                            </p>
+                            <div class="division2"></div>
+
+                            <h3 class="headingSix">
+                                <!-- For Client -->
+                                <input name="for_client" id="for_client" value="For Client" type="text"
+                                    class="validate">
+                            </h3>
+                            <p class="paragraph">
+
+                                <textarea class="materialize-textarea" name="six_text_client" id="six_text_client"
+                                    type="text">Please specify the supporting documentation required by your purchase, accounts and approving authorities that need to be attached to the invoices. The attachments including chalans, or any other documents will be available only with the original invoices. In case of lost invoices and duplicates, supporting documents will not be furnished again.</textarea>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="division"></div>
+
+
+                <div class="row">
+                    <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
+                        <div class="slides">
+                            <h1 class="headingOne">
+                                <!-- 07. <span class="headingTwo">APPROVALS</span> -->
+                                <input name="seven_heading" id="seven_heading" value="7. Approvals" type="text"
+                                    class="validate cust-heading">
+                            </h1>
+
+                            <p class="paragraph">
+
+                                <textarea class="materialize-textarea" name="seven_text" id="seven_text"
+                                    type="text">Work In Progress will be shared at appropriate time intervals. Timely approvals will help deliver the project in estimated time.</textarea>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="clearfix"></div>
+                <div class="divider" style="height: 10px; background-color: #e0e0e0; margin:120px 10px 60px;"></div>
+
+                <div class="row">
+                    <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
+                        <div class="slides">
+                            <h1 class="headingOne">
+                                <input name="eight_heading" id="eight_heading" value="8. Release Format" type="text"
+                                    class="validate cust-heading">
+                            </h1>
+
+                            <p class="paragraph">
+                                <textarea class="materialize-textarea" name="eight_text" id="eight_text"
+                                    type="text">All print artworks will be released in CQ Adobe Illustrator (.AI files) or high resolution pdf. All digital inputs will be released as specified by the client. All Work In Progress Files will be shared as jpegs and pdfs.</textarea>
+                                <span class="fontWeight900">
+
+                                    <textarea class="materialize-textarea" name="eight_note" id="eight_note"
+                                        type="text">Kindly note: All final artworks will be released through our file transfer portal - bdeliver. Unique username, and password will be shared with the client team for their account. You can access your account for downloading released files.</textarea>
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="col xxxl6 xxl6 xl6 l6 m12 s12">
+                            <p>For Brandcare</p>
+                            <div class="input-field col m4 s12">
+                                <input name="bc_name" id="bc_name" type="text" class="validate">
+                                <label for="first_name" class="clientDetails2">Name</label>
+                            </div>
+                            <div class="input-field col m4 s12">
+                                <input name="bc_designate" id="bc_designate" type="text" class="validate">
+                                <label for="first_name" class="clientDetails2">Designation</label>
+                            </div>
+                            <!--<div class="input-field col m3 s12">
+						  <input name="bc_signature"   id="bc_signature" type="text" class="validate">
+						  <label for="first_name" class="clientDetails2">Signature</label>
+						</div>-->
+                            <div class="input-field col m4 s12">
+                                <input name="bc_date" id="bc_date" type="text" class="validate">
+                                <label for="first_name" class="clientDetails2">Date</label>
+                            </div>
+                        </div>
+
+
+                        <div class="col xxxl6 xxl6 xl6 l6 m12 s12">
+                            <p>For Client</p>
+                            <div class="input-field col m4 s12">
+                                <input name="cc_name" id="cc_name" type="text" class="validate">
+                                <label for="first_name" class="clientDetails2">Name</label>
+                            </div>
+                            <div class="input-field col m4 s12">
+                                <input name="cc_designate" id="cc_designate" type="text" class="validate">
+                                <label for="first_name" class="clientDetails2">Designation</label>
+                            </div>
+                            <!-- <div class="input-field col m3 s12">
+						  <input name="cc_signature"   id="cc_signature" type="text" class="validate">
+						  <label for="first_name" class="clientDetails2">Signature</label>
+						</div> -->
+                            <div class="input-field col m4 s12">
+                                <input name="cc_date" id="cc_date" type="text" class="validate">
+                                <label for="first_name" class="clientDetails2">Date</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <br><br><br><br><br><br>
+                <div class="clearfix"></div>
+
+
+                <center>
+                    <button class="modal-trigger submitBtn" onclick="submitBtn()">Send</button>
+                </center>
+
+
+                <div class="footer">
+                    <div class="row">
+                        <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
+
+                            <div class="col l3 s12">
+                                <img src="https://bdeliver.net/bdelivernew/images/docintosh-logo1.png"
+                                    class="responsive-img logo" alt="logo" data-pagespeed-url-hash="87322390"
+                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
+                            </div>
+
+                            <!-- <div class="col l2 s12">
+							<h5 class="left-align footerHeading">Address</h5>
+							<ul>
+								<li>405, Sunrise Business Park, Plot No. B-68, Road No. 16, MIDC, Wagle Estate, Thane W - 400604. </li>
+							</ul>
+						</div> -->
+
+                            <div class="col l2 s12">
+                                <h5 class="left-align footerHeading">Project Lead</h5>
+                                <ul>
+                                    <li>
+                                        <div class="input-field">
+                                            <input id="pro_project_lead" placeholder="TYPE HERE" name="pro_project_lead"
+                                                type="text" class="validate" required>
+                                            <!-- <label for="pro_project_lead" class="inputText">type here</label> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col l2 s12">
+                                <h5 class="left-align footerHeading">Client Servicing</h5>
+                                <ul>
+                                    <li>
+                                        <div class="input-field">
+                                            <input id="pro_client_servicing" placeholder="TYPE HERE" type="text"
+                                                name="pro_client_servicing" class="validate" required>
+                                            <!-- <label for="pro_client_servicing" class="inputText">type here</label> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col l2 s12">
+                                <h5 class="left-align footerHeading">Creative</h5>
+                                <ul>
+                                    <li>
+                                        <div class="input-field">
+                                            <input id="pro_creative_director" placeholder="TYPE HERE" type="text"
+                                                name="pro_creative_director" class="validate" required>
+                                            <!-- <label for="pro_creative_director" class="inputText">type here</label> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col l2 s12">
+                                <h5 class="left-align footerHeading">Medical Lead</h5>
+                                <ul>
+                                    <li>
+                                        <div class="input-field">
+                                            <input id="pro_medical_lead" type="text" placeholder="TYPE HERE"
+                                                name="pro_medical_lead" class="validate" required>
+                                            <!-- <label for="pro_medical_lead" class="inputText">type here</label> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <div class="container copyright">© 2023 Docintosh Technologies LLP. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+            <!-- <a href="https://bdeliver.net/bdelivernew/home" style="margin-right: 80px;" class="logout">Home</a>
+
+            <a class="logout" href="https://bdeliver.net/bdelivernew/logout"
+                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                Logout
+            </a>
+
+            <form id="logout-form" action="https://bdeliver.net/bdelivernew/logout" method="POST"
+                style="display: none;">
+                <input type="hidden" name="_token" value="VKMf4GyJM8X277v9oxfXO8b5rqV8NQ04AHKqMj0o">
+            </form> -->
+
+
+        </div>
     </div>
+
     <!--Import jQuery before materialize.js-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/sweetalert2/6.4.1/sweetalert2.js"></script>
+
+    <script type="text/javascript">
+        function setCurrency() {
+            swal({
+                input: 'select',
+                inputOptions: {
+                    'USD': 'Dollar',
+                    'INR': 'Indian Rupee',
+                }
+            }).then((result) => {
+                $("#currency").val(result);
+                $("label[id='text_currency']").text(result);
+            });
+        }
+    </script>
+
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#four_a_text").keypress(function (e) {
-                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
-                    $("#errmsg").html("Digits Only").show().fadeOut("slow");
-                    return false;
-                }
+            $(document).on('keyup', '.scope_fee', function () {
+                var total = 0;
+                $('.scope_fee').each(function () {
+                    total += parseFloat($(this).val());
+                })
+                document.getElementById("total_details").value = total;
+            });
+            $(".add_button").click(function () {
+                $(".stripedaddmore").append(
+                    '<tr><td><span class="fontWeight900"><div class="input-field"><input name="scope_label[]" type="text" class="validate"></div></span></td><td><div class="input-field"><input name="scope_details[]" type="text" class="validate"><label for="last_name">Type/write here</label></div></td><td><div class="input-field"><input name="scope_fee[]" min="0" type="number" class="validate scope_fee"><label for="last_name" id="text_currency"></label></div></td><td><a href="javascript:void(0);" class="remove_button" title="Add field"><img src="https://bdeliver.net/bdelivernew/public/images/remove-icon.png"/></a></td></tr>'
+                );
+            });
+            $(".stripedaddmore").on('click', '.remove_button', function () {
+                $(this).parent().parent().remove();
             });
         });
     </script>
-    <script>
-        function calc() {
-            var camp_theam_fee = document.getElementById("camp_theam_fee").value;
-            var camp_theam_fee = +camp_theam_fee;
-            var camp_prog_fee = document.getElementById("camp_prog_fee").value;
-            var camp_prog_fee = +camp_prog_fee;
-            var collateral_fee = document.getElementById("collateral_fee").value;
-            var collateral_fee = +collateral_fee;
-            var Initiatives_fee = document.getElementById("Initiatives_fee").value;
-            var Initiatives_fee = +Initiatives_fee;
-            var engagement_fee = document.getElementById("engagement_fee").value;
-            var engagement_fee = +engagement_fee;
-            var dcampaigns_fee = document.getElementById("dcampaigns_fee").value;
-            var dcampaigns_fee = +dcampaigns_fee;
-            var films_fee = document.getElementById("films_fee").value;
-            var films_fee = +films_fee;
-            var medinitiatives_fee = document.getElementById("medinitiatives_fee").value;
-            var medinitiatives_fee = +medinitiatives_fee;
-            var medianimations_fee = document.getElementById("medianimations_fee").value;
-            var medianimations_fee = +medianimations_fee;
-            var cmecontent_fee = document.getElementById("cmecontent_fee").value;
-            var cmecontent_fee = +cmecontent_fee;
-            var market_research_fee = document.getElementById("market_research_fee").value;
-            var market_research_fee = +market_research_fee;
-            var inputs_fee = document.getElementById("inputs_fee").value;
-            var inputs_fee = +inputs_fee;
-            var total = camp_theam_fee + camp_prog_fee + collateral_fee + Initiatives_fee + engagement_fee +
-                dcampaigns_fee + films_fee + medinitiatives_fee + medianimations_fee + cmecontent_fee +
-                market_research_fee + inputs_fee;
-            document.getElementById("total_fee").value = total;
-        }
-    </script>
+
+
     <script>
         function submitBtn() {
             var name = $("#name").val();
@@ -329,24 +668,11 @@
             }
         }
     </script>
-    <script type="text/javascript">
-        function setCurrency() {
-            swal({
-                input: 'select',
-                inputOptions: {
-                    'USD': 'Dollar',
-                    'INR': 'Indian Rupee',
-                    'SGD': 'Singapore Dollar',
-                }
-            }).then((result) => {
-                $("#currency").val(result);
-                $("label[id='text_currency']").text(result);
-            });
-        }
-    </script>
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+
+
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
 </body>
 
 </html>

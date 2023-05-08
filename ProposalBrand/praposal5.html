@@ -90,6 +90,20 @@
             border: none;
             float: right;
         }
+
+        center {
+            margin: 20px 0;
+        }
+
+        .headingOne input.cust-heading {
+
+            font-size: 3rem !important;
+
+            font-weight: 700 !important;
+
+            color: #2a517478;
+
+        }
     </style>
 </head>
 
@@ -98,86 +112,99 @@
 
     <div class="row">
         <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
-            <div class="slides">
+            <div class="slides" style="position: relative;">
                 <h1 class="headingOne">
-                    <!-- 08. 
-         <span class="headingTwo">
-         RELEASE FORMAT
-         </span> -->
-                    <input name="eight_heading" id="eight_heading" value="8. Release Format" type="text"
+                    <!-- 03. <span class="headingTwo">Project Team  <br><span class="headingThree">Brandcare Team</span></span> -->
+                    <input name="three_heading" id="three_heading" value="3. Project Team" type="text"
                         class="validate cust-heading">
+                    <input name="three_head_text" id="three_head_text" value="Brandcare Team" type="text"
+                        class="validate">
                 </h1>
-                <p class="paragraph">
-                    <!-- All print artworks will be released in CQ Adobe Illustrator (.AI files) or high resolution pdf. All digital inputs will be released as specified by the client. All Work In Progress Files will be shared as jpegs and pdfs.  -->
-                    <textarea class="materialize-textarea" name="eight_text" id="eight_text"
-                        type="text">All print artworks will be released in CQ Adobe Illustrator (.AI files) or high resolution pdf. All digital inputs will be released as specified by the client. All Work In Progress Files will be shared as jpegs and pdfs.</textarea>
-                    <span class="fontWeight900">
-                        <!-- Kindly note: All final artworks will be released through our file transfer portal - bdeliver. Unique username, and password will be shared with the client team for their account. You can access your account for downloading released files. -->
-                        <textarea class="materialize-textarea" name="eight_note" id="eight_note"
-                            type="text">Kindly note: All final artworks will be released through our file transfer portal - bdeliver. Unique username, and password will be shared with the client team for their account. You can access your account for downloading released files.</textarea>
-                    </span>
-                </p>
-                <div class="input-field col width100 pd-input marTop20">
-                    <p><b>For Brandcare</b></p>
-                    <div class="input-field col m4 s12">
-                        <input name="bc_name" id="bc_name" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Name</label>
-                    </div>
-                    <div class="input-field col m4 s12">
-                        <input name="bc_designate" id="bc_designate" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Designation</label>
-                    </div>
-                    <!--<div class="input-field col m3 s12">
-         <input name="bc_signature"   id="bc_signature" type="text" class="validate">
-         <label for="first_name" class="clientDetails2">Signature</label>
-         </div>-->
-                    <div class="input-field col m4 s12">
-                        <input name="bc_date" id="bc_date" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Date</label>
-                    </div>
-                </div>
-                <div class="input-field col width100 pd-input marTop20">
-                    <p><b>For Client</b></p>
-                    <div class="input-field col m4 s12">
-                        <input name="cc_name" id="cc_name" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Name</label>
-                    </div>
-                    <div class="input-field col m4 s12">
-                        <input name="cc_designate" id="cc_designate" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Designation</label>
-                    </div>
-                    <!-- <div class="input-field col m3 s12">
-         <input name="cc_signature"   id="cc_signature" type="text" class="validate">
-         <label for="first_name" class="clientDetails2">Signature</label>
-         </div> -->
-                    <div class="input-field col m4 s12">
-                        <input name="cc_date" id="cc_date" type="text" class="validate">
-                        <label for="first_name" class="clientDetails2">Date</label>
-                    </div>
-                    </dvi>
-                </div>
+                <table class="striped">
+                    <tbody>
+                        <tr>
+                            <td><span class="fontWeight900"><input name="project_adviser_text" id="project_adviser_text"
+                                        value="Project Adviser" type="text" class="validate"></span></td>
+                            <td>
+                                <div class="input-field mt-0">
+                                    <input name="project_adviser" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="fontWeight900"><input name="project_lead_text" id="project_lead_text"
+                                        value="Project Lead" type="text" class="validate"></span></td>
+                            <td>
+                                <div class="input-field mt-0">
+                                    <input name="project_lead" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="fontWeight900"><input name="digital_lead_text" id="digital_lead_text"
+                                        value="Digital Lead" type="text" class="validate"></span></td>
+                            <!-- <td><span class="fontWeight900">Digital Lead</span></td> -->
+                            <td>
+                                <div class="input-field mt-0">
+                                    <input name="digital_lead" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="fontWeight900"><input name="medical_lead_text" id="medical_lead_text"
+                                        value="Medical Lead" type="text" class="validate"></span></td>
+                            <!-- <td><span class="fontWeight900">Medical Lead</span></td> -->
+                            <td>
+                                <div class="input-field mt-0">
+                                    <input name="medical_lead" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="fontWeight900"><input name="servicing_text" id="servicing_text"
+                                        value="Client servicing" type="text" class="validate"></span></td>
+                            <!-- <td><span class="fontWeight900">Client servicing </span></td> -->
+                            <td>
+                                <div class="input-field mt-0">
+                                    <input name="client_servicing" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="fontWeight900"><input name="creative_lead_text" id="creative_lead_text"
+                                        value="Creative Lead" type="text" class="validate"></span></td>
+                            <!-- <td><span class="fontWeight900">Creative Lead </span></td> -->
+                            <td>
+                                <div class="input-field mt-0">
+                                    <input name="creative_lead" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="fontWeight900"><input name="accounts_admin_text" id="accounts_admin_text"
+                                        value="Admin & Accounts" type="text" class="validate"></span></td>
+                            <!-- <td><span class="fontWeight900">Admin & Accounts </span></td> -->
+                            <td>
+                                <div class="input-field mt-0">
+                                    <input name="admin_ac" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Type/write here</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <br>
+
             <center>
-                <a href="praposal10.html"><button class="modal-trigger nextbtn" type="button">Next</button></a>
+                <a href="praposal6.html"><button class="modal-trigger nextbtn" type="button">Next</button></a>
             </center>
         </div>
-
-
-        <!-- </form> -->
-
-
-        </form>
-        <a href="https://bdeliver.net/bdelivernew/home" style="margin-right: 80px;" class="logout">Home</a>
-        <!-- <a href="https://bdeliver.net/bdelivernew/changePassword" style="margin-right: 150px;" class="logout">Change Password</a> -->
-        <a class="logout" href="https://bdeliver.net/bdelivernew/logout"
-            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-            Logout
-        </a>
-        <form id="logout-form" action="https://bdeliver.net/bdelivernew/logout" method="POST" style="display: none;">
-            <input type="hidden" name="_token" value="YvS5KbW3hc4LmQ0HVzvgp9RaMMNnnOuFxLUk2TdA">
-        </form>
-
     </div>
 
 
