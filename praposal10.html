@@ -90,6 +90,20 @@
             border: none;
             float: right;
         }
+
+        center {
+            margin: 20px 0;
+        }
+
+        .headingOne input.cust-heading {
+
+            font-size: 3rem !important;
+
+            font-weight: 700 !important;
+
+            color: #2a517478;
+
+        }
     </style>
 </head>
 
@@ -97,7 +111,7 @@
 
 
     <div class="row">
-        <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12">
+        <div class="col offset-xxxl2 xxxl8 offset-xxl2 xxl8 offset-xl1 xl10 l12 m12 s12" style="margin-bottom:20px;">
             <div class="slides">
                 <h1 class="headingOne">
                     <!-- 08. 
@@ -137,7 +151,7 @@
                     </div>
                 </div>
                 <div class="input-field col width100 pd-input marTop20">
-                    <p><b>For Client</b></p>
+                    <p>For Client</p>
                     <div class="input-field col m4 s12">
                         <input name="cc_name" id="cc_name" type="text" class="validate">
                         <label for="first_name" class="clientDetails2">Name</label>
@@ -156,131 +170,115 @@
                     </div>
                     </dvi>
                 </div>
+                <center>
+                    <a href="brand_footer.html"><button class="modal-trigger nextbtn" type="button">Next</button></a>
+                </center>
             </div>
-            <br>
-            <center>
-                <a href="praposal10.html"><button class="modal-trigger nextbtn" type="button">Next</button></a>
-            </center>
+
+
         </div>
 
 
-        <!-- </form> -->
-
-
-        </form>
-        <a href="https://bdeliver.net/bdelivernew/home" style="margin-right: 80px;" class="logout">Home</a>
-        <!-- <a href="https://bdeliver.net/bdelivernew/changePassword" style="margin-right: 150px;" class="logout">Change Password</a> -->
-        <a class="logout" href="https://bdeliver.net/bdelivernew/logout"
-            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-            Logout
-        </a>
-        <form id="logout-form" action="https://bdeliver.net/bdelivernew/logout" method="POST" style="display: none;">
-            <input type="hidden" name="_token" value="YvS5KbW3hc4LmQ0HVzvgp9RaMMNnnOuFxLUk2TdA">
-        </form>
-
-    </div>
-
-
-    <br>
-    <!--Import jQuery before materialize.js-->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/sweetalert2/6.4.1/sweetalert2.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#four_a_text").keypress(function (e) {
-                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
-                    $("#errmsg").html("Digits Only").show().fadeOut("slow");
-                    return false;
-                }
+        <br>
+        <!--Import jQuery before materialize.js-->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/sweetalert2/6.4.1/sweetalert2.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#four_a_text").keypress(function (e) {
+                    if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                        $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                        return false;
+                    }
+                });
             });
-        });
-    </script>
-    <script>
-        function calc() {
-            var camp_theam_fee = document.getElementById("camp_theam_fee").value;
-            var camp_theam_fee = +camp_theam_fee;
-            var camp_prog_fee = document.getElementById("camp_prog_fee").value;
-            var camp_prog_fee = +camp_prog_fee;
-            var collateral_fee = document.getElementById("collateral_fee").value;
-            var collateral_fee = +collateral_fee;
-            var Initiatives_fee = document.getElementById("Initiatives_fee").value;
-            var Initiatives_fee = +Initiatives_fee;
-            var engagement_fee = document.getElementById("engagement_fee").value;
-            var engagement_fee = +engagement_fee;
-            var dcampaigns_fee = document.getElementById("dcampaigns_fee").value;
-            var dcampaigns_fee = +dcampaigns_fee;
-            var films_fee = document.getElementById("films_fee").value;
-            var films_fee = +films_fee;
-            var medinitiatives_fee = document.getElementById("medinitiatives_fee").value;
-            var medinitiatives_fee = +medinitiatives_fee;
-            var medianimations_fee = document.getElementById("medianimations_fee").value;
-            var medianimations_fee = +medianimations_fee;
-            var cmecontent_fee = document.getElementById("cmecontent_fee").value;
-            var cmecontent_fee = +cmecontent_fee;
-            var market_research_fee = document.getElementById("market_research_fee").value;
-            var market_research_fee = +market_research_fee;
-            var inputs_fee = document.getElementById("inputs_fee").value;
-            var inputs_fee = +inputs_fee;
-            var total = camp_theam_fee + camp_prog_fee + collateral_fee + Initiatives_fee + engagement_fee +
-                dcampaigns_fee + films_fee + medinitiatives_fee + medianimations_fee + cmecontent_fee +
-                market_research_fee + inputs_fee;
-            document.getElementById("total_fee").value = total;
-        }
-    </script>
-    <script>
-        function submitBtn() {
-            var name = $("#name").val();
-            var client = $("#client").val();
-            var proposal_by = $("#proposal_by").val();
-            var proposal_validity = $("#proposal_validity").val();
-            var email = $("#email").val();
-            var pro_project_lead = $("#pro_project_lead").val();
-            var pro_client_servicing = $("#pro_client_servicing").val();
-            var pro_creative_director = $("#pro_creative_director").val();
-            var pro_medical_lead = $("#pro_medical_lead").val();
-            var doc_id = $("#doc_id").val();
-            if (name == "" || client == "" || proposal_by == "" || proposal_validity == "" || email == "") {
+        </script>
+        <script>
+            function calc() {
+                var camp_theam_fee = document.getElementById("camp_theam_fee").value;
+                var camp_theam_fee = +camp_theam_fee;
+                var camp_prog_fee = document.getElementById("camp_prog_fee").value;
+                var camp_prog_fee = +camp_prog_fee;
+                var collateral_fee = document.getElementById("collateral_fee").value;
+                var collateral_fee = +collateral_fee;
+                var Initiatives_fee = document.getElementById("Initiatives_fee").value;
+                var Initiatives_fee = +Initiatives_fee;
+                var engagement_fee = document.getElementById("engagement_fee").value;
+                var engagement_fee = +engagement_fee;
+                var dcampaigns_fee = document.getElementById("dcampaigns_fee").value;
+                var dcampaigns_fee = +dcampaigns_fee;
+                var films_fee = document.getElementById("films_fee").value;
+                var films_fee = +films_fee;
+                var medinitiatives_fee = document.getElementById("medinitiatives_fee").value;
+                var medinitiatives_fee = +medinitiatives_fee;
+                var medianimations_fee = document.getElementById("medianimations_fee").value;
+                var medianimations_fee = +medianimations_fee;
+                var cmecontent_fee = document.getElementById("cmecontent_fee").value;
+                var cmecontent_fee = +cmecontent_fee;
+                var market_research_fee = document.getElementById("market_research_fee").value;
+                var market_research_fee = +market_research_fee;
+                var inputs_fee = document.getElementById("inputs_fee").value;
+                var inputs_fee = +inputs_fee;
+                var total = camp_theam_fee + camp_prog_fee + collateral_fee + Initiatives_fee + engagement_fee +
+                    dcampaigns_fee + films_fee + medinitiatives_fee + medianimations_fee + cmecontent_fee +
+                    market_research_fee + inputs_fee;
+                document.getElementById("total_fee").value = total;
+            }
+        </script>
+        <script>
+            function submitBtn() {
+                var name = $("#name").val();
+                var client = $("#client").val();
+                var proposal_by = $("#proposal_by").val();
+                var proposal_validity = $("#proposal_validity").val();
+                var email = $("#email").val();
+                var pro_project_lead = $("#pro_project_lead").val();
+                var pro_client_servicing = $("#pro_client_servicing").val();
+                var pro_creative_director = $("#pro_creative_director").val();
+                var pro_medical_lead = $("#pro_medical_lead").val();
+                var doc_id = $("#doc_id").val();
+                if (name == "" || client == "" || proposal_by == "" || proposal_validity == "" || email == "") {
+                    swal({
+                        text: "Please Check If Name , Client , Proposal By , Proposal Validity  or Email Field is Empty."
+                    });
+                } else if (pro_project_lead == "" || pro_client_servicing == "" || pro_creative_director == "" ||
+                    pro_medical_lead == "") {
+                    swal({
+                        text: "Please Check If Project Lead , Client Servicing , Creative or Medical Lead is Empty."
+                    });
+                } else if (doc_id != "") {
+                    swal({
+                        text: "Thank you, for submitting Proposal. We will get back to you shortly."
+                    }).then((value) => {
+                        $("#form1").submit();
+                    });
+                } else {
+                    swal({
+                        text: "Your link has been shared successfully to " + name + "."
+                    }).then((value) => {
+                        $("#form1").submit();
+                    });
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            function setCurrency() {
                 swal({
-                    text: "Please Check If Name , Client , Proposal By , Proposal Validity  or Email Field is Empty."
-                });
-            } else if (pro_project_lead == "" || pro_client_servicing == "" || pro_creative_director == "" ||
-                pro_medical_lead == "") {
-                swal({
-                    text: "Please Check If Project Lead , Client Servicing , Creative or Medical Lead is Empty."
-                });
-            } else if (doc_id != "") {
-                swal({
-                    text: "Thank you, for submitting Proposal. We will get back to you shortly."
-                }).then((value) => {
-                    $("#form1").submit();
-                });
-            } else {
-                swal({
-                    text: "Your link has been shared successfully to " + name + "."
-                }).then((value) => {
-                    $("#form1").submit();
+                    input: 'select',
+                    inputOptions: {
+                        'USD': 'Dollar',
+                        'INR': 'Indian Rupee',
+                        'SGD': 'Singapore Dollar',
+                    }
+                }).then((result) => {
+                    $("#currency").val(result);
+                    $("label[id='text_currency']").text(result);
                 });
             }
-        }
-    </script>
-    <script type="text/javascript">
-        function setCurrency() {
-            swal({
-                input: 'select',
-                inputOptions: {
-                    'USD': 'Dollar',
-                    'INR': 'Indian Rupee',
-                    'SGD': 'Singapore Dollar',
-                }
-            }).then((result) => {
-                $("#currency").val(result);
-                $("label[id='text_currency']").text(result);
-            });
-        }
-    </script>
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        </script>
+        <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </body>
 
 </html>
