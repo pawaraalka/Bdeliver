@@ -165,6 +165,17 @@
                     <a href="praposal2.html"><button class="modal-trigger nextbtn" type="button">Next</button></a>
                 </center>
             </form>
+            <a href="https://bdeliver.net/bdelivernew/home" style="margin-right: 80px;" class="logout">Home</a>
+
+            <a class="logout" href="https://bdeliver.net/bdelivernew/logout"
+                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                Logout
+            </a>
+
+            <form id="logout-form" action="https://bdeliver.net/bdelivernew/logout" method="POST"
+                style="display: none;">
+                <input type="hidden" name="_token" value="VKMf4GyJM8X277v9oxfXO8b5rqV8NQ04AHKqMj0o">
+            </form>
         </div>
 
     </div>
